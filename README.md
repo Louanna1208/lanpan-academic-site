@@ -7,8 +7,8 @@ Source for Lan Pan's academic website:
 
 - `index.html` - main page content
 - `styles.css` - visual design and responsive layout
-- `script.js` - small header behavior
-- `assets/computable-cognitive-science-hero.png` - generated hero image
+- `assets/LanPan_CV.pdf` - downloadable curriculum vitae
+- `Weixin Image_20250201191310.jpg` - profile photograph
 
 ## Local preview
 
