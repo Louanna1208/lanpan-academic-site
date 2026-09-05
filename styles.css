@@ -71,6 +71,15 @@ p { margin: 0 0 16px; }
 .profile-links { display: flex; flex-wrap: wrap; gap: 4px 18px; font-size: 14px; margin-top: 22px; }
 #research { padding-top: 28px; border-top: 1px solid var(--line); }
 .research-intro { max-width: 780px; margin-bottom: 34px; }
+.research-framework { margin: 0 0 42px; padding: 0 0 24px; border-bottom: 1px solid var(--line); }
+.research-framework figcaption { margin-bottom: 20px; color: var(--muted); font-size: 13px; }
+.framework-path { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 28px; list-style: none; margin: 0; padding: 0; }
+.framework-path li { position: relative; min-width: 0; }
+.framework-path li:not(:last-child)::after { content: "\2192"; position: absolute; top: 1px; right: -22px; color: #8b8b8b; }
+.framework-path a { display: block; text-decoration: none; }
+.framework-path a:hover strong { text-decoration: underline; text-underline-offset: 3px; }
+.framework-path strong { display: block; min-height: 44px; font-size: 14px; font-weight: 600; line-height: 1.5; }
+.framework-path span { display: block; color: var(--muted); font-size: 13px; line-height: 1.5; }
 .research-topic { padding: 0 0 30px; margin-bottom: 32px; border-bottom: 1px solid var(--line); }
 .research-topic > p { max-width: 790px; }
 
@@ -88,6 +97,7 @@ sup { font-size: 10px; line-height: 0; }
 .citation-note { font-size: 12px; color: var(--muted); }
 .ongoing { margin: 20px 0 0; font-size: 14px; color: #545454; }
 .ongoing strong { color: #333; font-weight: 600; }
+.ongoing + p { margin-top: 16px; }
 #contact { padding: 0 0 32px; }
 #contact h2 { font-size: 21px; margin-bottom: 10px; }
 .site-footer { max-width: 848px; margin: 0 auto; padding: 20px 0 32px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; }
@@ -106,6 +116,9 @@ sup { font-size: 10px; line-height: 0; }
   h2 { font-size: 23px; }
   h3 { font-size: 20px; }
   .research-topic { margin-bottom: 28px; padding-bottom: 26px; }
+  .framework-path { grid-template-columns: minmax(0, 1fr); gap: 26px; }
+  .framework-path strong { min-height: 0; }
+  .framework-path li:not(:last-child)::after { content: "\2193"; top: auto; bottom: -24px; left: 0; right: auto; }
   .citation { overflow-wrap: anywhere; }
   .site-footer { margin: 0 22px; }
 }

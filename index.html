@@ -24,10 +24,10 @@
           <h1 id="name">Lan Pan</h1>
           <p class="discipline">Computational cognitive science</p>
           <p>
-            I am interested in how cognitive mechanisms carry across tasks and
-            situations, and how we can measure them more directly. My research
-            uses behavioral data, language, and computational models to connect
-            findings across studies and test the reach of cognitive theories.
+            I ask when findings from different tasks and settings can be
+            treated as evidence about the same cognitive mechanism. My research
+            uses language, behavioral data, and computational models to measure
+            these relationships and investigate where cognitive theories apply.
           </p>
           <p>
             I work with Robert C. Wilson and Hanbo Xie at Georgia Tech,
@@ -49,26 +49,101 @@
       <section id="research" aria-labelledby="research-title">
         <h2 id="research-title">Research interests</h2>
         <p class="research-intro">
-          My broader aim is a computable, cumulative cognitive science: one in
-          which we can compare what tasks measure, use multiple sources of
-          evidence to identify mechanisms, and build on findings across studies.
-          Three questions guide my work.
+          My aim is a computable, cumulative cognitive science. A construct may
+          be described in a paper, operationalized in a task, observed in
+          behavior, and explained by a model. Establishing whether these
+          representations concern the same mechanism connects four research
+          interests: comparability, transfer, the boundaries of effects, and
+          real-world validity.
         </p>
 
-        <article class="research-topic" aria-labelledby="tasks-title">
-          <h3 id="tasks-title">Cognitive mechanisms across tasks</h3>
+        <figure class="research-framework" aria-labelledby="framework-caption">
+          <figcaption id="framework-caption">From comparable evidence to generalizable explanations</figcaption>
+          <ol class="framework-path">
+            <li>
+              <a href="#representations">
+                <strong>Align representations</strong>
+                <span>What makes evidence comparable?</span>
+              </a>
+            </li>
+            <li>
+              <a href="#task-relations">
+                <strong>Measure task relations</strong>
+                <span>What transfers between tasks?</span>
+              </a>
+            </li>
+            <li>
+              <a href="#effect-boundaries">
+                <strong>Map effect boundaries</strong>
+                <span>When does an effect hold?</span>
+              </a>
+            </li>
+            <li>
+              <a href="#real-world">
+                <strong>Test real-world validity</strong>
+                <span>Do mechanisms generalize?</span>
+              </a>
+            </li>
+          </ol>
+        </figure>
+
+        <article id="representations" class="research-topic" aria-labelledby="representations-title">
+          <h3 id="representations-title">Aligning scientific representations</h3>
           <p>
-            When do different tasks rely on the same cognitive process?
-            Similar task names or behavioral outcomes provide only part of the
-            answer. I am interested in using learning and transfer, together
-            with models' internal representations, to identify shared and
-            task-specific mechanisms.
+            What makes findings from different studies comparable? Hypotheses,
+            experimental manipulations, behavioral effects, and computational
+            models express different aspects of a scientific claim. I am
+            interested in making their relationships explicit so we can assess
+            whether they provide evidence about the same mechanism.
           </p>
           <p>
-            Our work on exploration connects strategies in language models to
-            representations of uncertainty and empowerment at different model
-            layers. This provides a starting point for studying how
-            behaviorally relevant computations are represented within models.
+            The starting point is a scientific question: which studies use a
+            similar manipulation but report different effects, or which
+            intervention would distinguish competing models? These questions
+            determine what a computational representation needs to preserve
+            and how to test its usefulness.
+          </p>
+          <p>
+            Our hypothesis-literature matching work compares claims and papers
+            through their theoretical constructs. It provides a first step
+            toward comparing evidence across differences in terminology.
+          </p>
+          <p class="citation">
+            <strong>Pan, L.</strong>, &amp; Musslick, S. (2026).
+            Has someone already tested this? Construct-level hypothesis-literature matching.
+            <em>Discovery Science 2026</em> (accepted).
+          </p>
+          <p class="ongoing">
+            <strong>Ongoing.</strong> Extending this question to experimental
+            factors and task structure through event-state representations,
+            with cognitive control as an initial domain.
+          </p>
+        </article>
+
+        <article id="task-relations" class="research-topic" aria-labelledby="tasks-title">
+          <h3 id="tasks-title">Measuring relationships between tasks</h3>
+          <p>
+            Do task labels and descriptions capture the processes expressed in
+            human behavior? Tasks that sound similar may recruit different
+            processes, while differently named tasks may share computational
+            structure. I am interested in measuring these relationships through
+            behavior and comparing them with expert classifications and
+            semantic similarity.
+          </p>
+          <p class="ongoing">
+            <strong>Ongoing.</strong> Using LLM fine-tuning as a measurement tool:
+            within a common model backbone, an adapter is trained on human
+            behavior from one task and evaluated on whether it improves
+            prediction of human behavior in another. Transfer patterns define
+            an operational measure of behavioral-computational relationships;
+            further tests examine which behavioral features account for them.
+          </p>
+          <p>
+            Our exploration study provides a methodological foundation:
+            analyses of model representations connect exploratory strategies to
+            uncertainty and empowerment. This motivates using language models
+            and their internal representations to investigate cognitive
+            processes across tasks.
           </p>
           <p class="citation">
             <strong>Pan, L.</strong><sup>*</sup>, Xie, H.<sup>*</sup>, &amp; Wilson, R. C. (2025).
@@ -78,29 +153,47 @@
             <a class="paper-link" href="https://arxiv.org/abs/2501.18009">[arXiv]</a>
           </p>
           <p class="citation-note"><sup>*</sup> Equal contribution.</p>
+        </article>
+
+        <article id="effect-boundaries" class="research-topic" aria-labelledby="effects-title">
+          <h3 id="effects-title">Mapping the boundaries of behavioral effects</h3>
+          <p>
+            Under what conditions does a behavioral effect appear, disappear,
+            or reverse? Comparing datasets across experimental conditions can
+            reveal boundaries that remain invisible within a single study.
+            I am interested in describing an effect as a function of task
+            features, timing, learning history, and other design choices.
+          </p>
+          <p>
+            The scientific goal is to determine which theoretical accounts
+            explain which regions of this experimental space, and whether those
+            accounts predict the outcomes of new experiments.
+          </p>
           <p class="ongoing">
-            <strong>Ongoing.</strong> Cross-task transfer among models trained on
-            individual psychology tasks; event-state representations for
-            comparing experimental paradigms, with cognitive control as an
-            initial domain.
+            <strong>Ongoing &middot; PSYCHE.</strong> Working with Akshay K.
+            Jagadish and Younes Strittmatter on an agent and analysis tools
+            built on a behavioral database developed by collaborators. My
+            contribution focuses on helping researchers find and analyze
+            relevant evidence across thousands of datasets, with the aim of
+            tracing comparable behavioral patterns across experiments.
           </p>
         </article>
 
-        <article class="research-topic" aria-labelledby="decisions-title">
-          <h3 id="decisions-title">Language and decision processes</h3>
+        <article id="real-world" class="research-topic" aria-labelledby="decisions-title">
+          <h3 id="decisions-title">Understanding real-world decisions</h3>
           <p>
-            How do people understand a decision problem, and how does that
-            understanding shape their choices? Different cognitive models can
-            explain the same choices. Verbal reports offer additional evidence
-            about the beliefs, strategies, and reference points that generate
-            behavior.
+            Do mechanisms inferred from laboratory measures explain real-world,
+            high-stakes choices? A task environment can change how a person
+            understands a problem, which may in turn change the process that
+            generates a decision. I am interested in measuring these subjective
+            representations through language and behavioral trajectories.
           </p>
           <p>
-            In our work on automated cognitive model discovery, adding
-            think-aloud data improved prediction of held-out decisions and
-            changed the structures of the models that were discovered. This
-            motivates my interest in language as a source of constraints on
-            explanations of decision-making.
+            Our work on automated cognitive model discovery shows that
+            think-aloud data can improve prediction of held-out decisions and
+            change the structures of the models discovered. This supports
+            using language to constrain explanations that behavior alone may
+            leave unresolved.
           </p>
           <p class="citation">
             Xie, H., Jagadish, A. K., <strong>Pan, L.</strong>, &amp; Wilson, R. C. (2026).
@@ -110,38 +203,10 @@
             <a class="paper-link" href="https://arxiv.org/abs/2605.05091">[arXiv]</a>
           </p>
           <p class="ongoing">
-            <strong>Ongoing.</strong> Using language and behavioral trajectories
-            from <em>Deal or No Deal</em> to study how people represent high-stakes
-            decisions, and whether mechanisms inferred from laboratory
-            measures also explain real-world choices.
-          </p>
-        </article>
-
-        <article class="research-topic" aria-labelledby="evidence-title">
-          <h3 id="evidence-title">Evidence across studies</h3>
-          <p>
-            How can findings accumulate when studies use different terms,
-            tasks, and datasets? I am interested in methods that make these
-            differences explicit so researchers can find relevant evidence and
-            determine what can be compared or combined.
-          </p>
-          <p>
-            Our hypothesis-literature matching work compares claims and papers
-            at the level of theoretical constructs. It examines whether a
-            hypothesis has already been tested even when the literature uses
-            different wording, and evaluates the evidence for a match.
-          </p>
-          <p class="citation">
-            <strong>Pan, L.</strong>, &amp; Musslick, S. (2026).
-            Has someone already tested this? Construct-level hypothesis-literature matching.
-            <em>Discovery Science 2026</em> (accepted).
-          </p>
-          <p class="ongoing">
-            <strong>Ongoing.</strong> Within the PSYCHE collaboration, my work
-            focuses on an agent and analysis tools built on a behavioral
-            database developed by collaborators. The goal is to help
-            researchers find and analyze relevant data across thousands of
-            datasets, asking questions that a single study cannot answer.
+            <strong>Ongoing.</strong> Studying consequential choices in settings
+            where options, outcomes, and timing can be reconstructed, to test
+            how subjective problem representations and decision mechanisms
+            change beyond the laboratory.
           </p>
         </article>
       </section>
