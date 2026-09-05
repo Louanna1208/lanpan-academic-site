@@ -99,9 +99,25 @@
             and how to test its usefulness.
           </p>
           <p>
-            Our hypothesis-literature matching work compares claims and papers
-            through their theoretical constructs. It provides a first step
-            toward comparing evidence across differences in terminology.
+            Our hypothesis-literature matching work asks whether a proposed
+            hypothesis has already been tested, even when the relevant studies
+            use different terminology. We represent both the query and claims
+            extracted from paper abstracts in terms of their predictor and
+            outcome constructs, the relationship between them, and any stated
+            conditions. This makes it possible to distinguish papers that
+            discuss related concepts from those that support or contradict the
+            specific claim.
+          </p>
+          <p>
+            In an evaluation using 107 expert-extracted hypothesis-paper pairs
+            and 1,605 synthetic unsupported hypotheses, construct-level matching
+            correctly rejected 87&ndash;90% of the unsupported hypotheses,
+            compared with 31&ndash;40% when asking an LLM directly. This more
+            conservative approach also missed more known support, and reversing
+            a claim's direction remained difficult to detect reliably. The
+            contribution is a testable way to compare claims beyond wording,
+            while separating conceptual overlap from evidence for a particular
+            relationship.
           </p>
           <p class="citation">
             <strong>Pan, L.</strong>, &amp; Musslick, S. (2026).
@@ -134,11 +150,26 @@
             further tests examine which behavioral features account for them.
           </p>
           <p>
-            Our exploration study provides a methodological foundation:
-            analyses of model representations connect exploratory strategies to
-            uncertainty and empowerment. This motivates using language models
-            and their internal representations to investigate cognitive
-            processes across tasks.
+            Our exploration study provides a methodological foundation for this
+            approach. We compared language models with 29,493 human players in
+            an open-ended discovery game, examining two strategies: seeking
+            uncertain outcomes and choosing actions that expand future
+            possibilities, known as empowerment. Humans used both, whereas
+            several non-reasoning models relied more heavily on uncertainty
+            and made less use of empowerment.
+          </p>
+          <p>
+            Sparse autoencoders identified internal features associated with
+            these theory-defined quantities. In LLaMA-3.1-70B, uncertainty and
+            choice-related signals were strongest in early layers, while
+            empowerment was represented most strongly later in the network.
+            Ablating an empowerment-related feature selectively reduced
+            empowerment-guided behavior, linking the representation to the
+            model's strategy through intervention. Together, these analyses
+            connect behavioral patterns, cognitive theory, and internal
+            computation. They motivate using language models as measurement
+            tools for studying cognitive processes, with representations that
+            can be examined and experimentally perturbed.
           </p>
           <p class="citation">
             <strong>Pan, L.</strong><sup>*</sup>, Xie, H.<sup>*</sup>, &amp; Wilson, R. C. (2025).
@@ -184,11 +215,25 @@
             representations through language and behavioral trajectories.
           </p>
           <p>
-            Our work on automated cognitive model discovery shows that
-            think-aloud data can improve prediction of held-out decisions and
-            change the structures of the models discovered. This supports
-            using language to constrain explanations that behavior alone may
-            leave unresolved.
+            Our work on automated cognitive model discovery asks whether
+            people's verbal accounts can help distinguish explanations that
+            their choices alone leave unresolved. Using risky decisions from
+            72 participants, we compared LLM-generated cognitive models
+            discovered from choices alone with models discovered from choices
+            and think-aloud reports together. Adding language improved model
+            fit on held-out decisions at the group level.
+          </p>
+          <p>
+            Crucially, language changed the computational structures of the
+            discovered models, not just their fit: 69.4% of participants'
+            best-fitting models moved to a different structural family. A
+            common shift was from explicitly comparing option values to first
+            transforming and integrating information within each option.
+            These results show that verbal reports can constrain which
+            explanations model discovery selects, beyond what behavior alone
+            provides. This offers a basis for investigating how subjective
+            interpretations shape decisions, without assuming that a better
+            fit by itself establishes the underlying human mechanism.
           </p>
           <p class="citation">
             Xie, H., Jagadish, A. K., <strong>Pan, L.</strong>, &amp; Wilson, R. C. (2026).
