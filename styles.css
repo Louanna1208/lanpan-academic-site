@@ -77,6 +77,7 @@ p { margin: 0 0 18px; }
 .research-topic::before { content: counter(topic, decimal-leading-zero); position: absolute; top: 2px; left: 0; color: var(--topic-color); font-family: var(--serif); font-size: 18px; }
 .research-topic > p { max-width: 790px; }
 .research-topic h3 { color: var(--topic-color); }
+.research-topic .research-question { font-weight: 600; line-height: 1.6; }
 
 .citation { margin: 26px 0 10px; padding: 2px 0 2px 22px; border-left: 2px solid var(--topic-color); font-size: 14px; line-height: 1.8; }
 .citation strong { font-weight: 750; color: #272e2b; }

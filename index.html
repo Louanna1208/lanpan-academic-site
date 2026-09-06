@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Lan Pan studies how evidence across cognitive tasks can inform predictions of human behavior, guide new experiments, and improve cognitive theories." />
     <title>Lan Pan | Computational Cognitive Science</title>
-    <link rel="stylesheet" href="styles.css?v=personal-2" />
+    <link rel="stylesheet" href="styles.css?v=research-questions-1" />
   </head>
   <body>
     <div class="reading-progress" aria-hidden="true"></div>
@@ -18,11 +18,13 @@
           <p class="discipline">Computational cognitive science</p>
           <p>
             I ask when findings from different tasks and settings can be
-            treated as evidence about the same cognitive mechanism. My research
-            uses language, behavioral data, and computational models to measure
-            these relationships. My goal is to use existing evidence to predict
-            behavior in new settings and design experiments that test and
-            improve cognitive theories.
+            treated as evidence about the same cognitive mechanism. Using
+            language, behavioral data, and computational models, I study how
+            tasks and theoretical claims relate to the processes expressed in
+            behavior. Clearer representations of these relationships should
+            help us make better predictions about human behavior we have not
+            yet observed, and decide which experiments could test, overturn,
+            or improve our explanations.
           </p>
           <p>
             I work with Robert C. Wilson and Hanbo Xie at Georgia Tech,
@@ -48,14 +50,12 @@
         <p class="research-intro">
           My aim is a computable, cumulative cognitive science. A construct may
           be described in a paper, operationalized in a task, observed in
-          behavior, and explained by a model. I study how these representations
-          relate, with the aim of turning scattered findings into evidence
-          that informs new hypotheses and experiments. Four connected interests
-          guide this work: identifying gaps in theoretical tests, predicting
-          task relationships, explaining the boundaries of effects, and
-          improving theories through their successes and failures beyond the
-          laboratory. New experiments should, in turn, help revise both the
-          representations and the theories they inform.
+          behavior, and explained by a model. Connecting these representations
+          should allow existing findings to constrain what we expect from an
+          experiment that has not yet been run. The four interests below form
+          a research cycle: make evidence comparable, learn which task features
+          matter, predict where explanations will succeed or fail, and use new
+          experiments to revise both the representations and the theories.
         </p>
 
         <figure class="research-framework" aria-labelledby="framework-caption">
@@ -76,13 +76,13 @@
             <li>
               <a href="#effect-boundaries">
                 <strong>Map effect boundaries</strong>
-                <span>When does an effect hold, disappear, or reverse, and which new experiment would distinguish the explanations?</span>
+                <span>When does an effect hold, disappear, or reverse, and can we predict why and where it changes?</span>
               </a>
             </li>
             <li>
               <a href="#real-world">
                 <strong>Test real-world validity</strong>
-                <span>When do laboratory models fail to predict real-world choices, and what cognitive processes are missing?</span>
+                <span>Which processes are missing when laboratory predictions fail, and can revised models predict new real-world choices?</span>
               </a>
             </li>
           </ol>
@@ -90,11 +90,14 @@
 
         <article id="representations" class="research-topic" aria-labelledby="representations-title">
           <h3 id="representations-title">Aligning scientific representations</h3>
+          <p class="research-question">
+            Once studies become comparable, which untested predictions and
+            decisive experiments become identifiable?
+          </p>
           <p>
-            What makes findings from different studies comparable? Hypotheses,
-            experimental manipulations, behavioral effects, and computational
-            models express different aspects of a scientific claim. I am
-            interested in making their relationships explicit so we can assess
+            Hypotheses, experimental manipulations, behavioral effects, and
+            computational models express different aspects of a scientific
+            claim. I am interested in making their relationships explicit so we can assess
             whether they provide evidence about the same mechanism.
           </p>
           <p>
@@ -103,10 +106,11 @@
             to generalize across sensory modalities but the evidence is entirely
             visual, that gap suggests a specific test. Representing claims
             alongside experimental factors could help distinguish old
-            hypotheses in new wording from untested predictions, and identify
-            experiments in which competing explanations disagree. Whether a
-            representation supports these scientific questions is the test of
-            its usefulness.
+            hypotheses in new wording from untested predictions. The next step
+            is to formulate those predictions and select experiments where
+            competing explanations disagree. This gives a gap scientific
+            value: testing it could change which explanation the evidence
+            supports, rather than simply add another study to the literature.
           </p>
           <p>
             Our hypothesis-literature matching work asks whether a proposed
@@ -142,6 +146,10 @@
 
         <article id="task-relations" class="research-topic" aria-labelledby="tasks-title">
           <h3 id="tasks-title">Measuring relationships between tasks</h3>
+          <p class="research-question">
+            Can a task's structure predict its transfer pattern, and can that
+            prediction guide the design of a new experiment?
+          </p>
           <p>
             Do task labels and descriptions capture the processes expressed in
             human behavior? Tasks that sound similar may recruit different
@@ -161,12 +169,14 @@
           <p>
             A next question is whether a new task's experimental structure can
             predict its transfer relationships before its behavioral data are
-            collected. Such predictions could guide controlled changes to a
-            task: altering its action-outcome contingencies, for example, while
-            preserving its cover story. The aim is to test which features
-            explain transfer and design experiments that distinguish competing
-            accounts. Connecting this model-based measure to human cognitive
-            mechanisms requires independent behavioral tests.
+            collected. Suppose transfer appears to depend on action-outcome
+            contingencies rather than a task's cover story. We could then
+            predict how transfer should change when contingencies change but
+            the story stays fixed, and compare this with changing the story
+            while preserving the contingencies. Such experiments would test
+            what accounts for the measured task relationships. Connecting this
+            model-based measure to human cognitive mechanisms requires
+            independent behavioral tests.
           </p>
           <p>
             Our exploration study provides a methodological foundation for this
@@ -202,6 +212,10 @@
 
         <article id="effect-boundaries" class="research-topic" aria-labelledby="effects-title">
           <h3 id="effects-title">Mapping the boundaries of behavioral effects</h3>
+          <p class="research-question">
+            Why do effect boundaries occur, and can we predict what happens
+            when we cross them?
+          </p>
           <p>
             Under what conditions does a behavioral effect appear, disappear,
             or reverse? Comparing datasets across experimental conditions can
@@ -210,43 +224,57 @@
             features, timing, learning history, and other design choices.
           </p>
           <p>
-            The next question is why those boundaries occur. If two theories
-            explain the same effect under familiar conditions, where do their
-            predictions diverge? I want to use cross-study evidence to locate
-            these conditions, predict outcomes in untested settings, and choose
-            experiments that distinguish the accounts. Testing these predictions
-            in new experiments can establish whether a boundary reflects the
-            proposed process or other differences between the original studies.
+            Consider two theories that both explain a positive effect under
+            familiar conditions. With less preparation time, one might predict
+            that the effect disappears, while the other predicts that it
+            reverses. Cross-study analysis could help locate this region of
+            disagreement; a targeted experiment could then distinguish the
+            explanations. The boundary becomes a source of new theoretical
+            tests, rather than just a description of where an effect stops.
+          </p>
+          <p>
+            My goal is to use evidence across experiments to develop
+            predictions about how effects depend on experimental conditions,
+            and identify new experiments that expose weaknesses in current
+            explanations. Those predictions need to be tested with newly
+            collected data, separating the proposed process from other
+            differences between the original studies.
           </p>
           <p class="ongoing">
             <strong>Ongoing &middot; PSYCHE.</strong> Working with Akshay K.
             Jagadish and Younes Strittmatter on an agent and analysis tools
             built on a behavioral database developed by collaborators. My
             contribution focuses on helping researchers find and analyze
-            relevant evidence across thousands of datasets. The longer-term
-            aim is to use those joint analyses to identify where current
-            explanations fall short and which new data would help improve them.
+            relevant evidence across thousands of datasets. These tools are
+            being developed to support the cross-experiment analyses needed
+            to formulate and test such condition-specific predictions.
           </p>
         </article>
 
         <article id="real-world" class="research-topic" aria-labelledby="decisions-title">
           <h3 id="decisions-title">Understanding real-world decisions</h3>
-          <p>
-            Do mechanisms inferred from laboratory measures explain real-world,
-            high-stakes choices? A task environment can change how a person
-            understands a problem, which may in turn change the process that
-            generates a decision. I am interested in measuring these subjective
-            representations through language and behavioral trajectories.
+          <p class="research-question">
+            When laboratory theories fail to predict real-world choices, which
+            processes are missing, and can incorporating them improve
+            predictions in new situations?
           </p>
           <p>
-            When a laboratory model fails in a real-world setting, that failure
-            can suggest processes it leaves out: changes in a person's goals,
-            reference points, or interpretation of the available options. I want
-            to use such discrepancies to develop revised models, test the
-            proposed processes through controlled manipulations, and ask
-            whether those models predict choices in new settings. Real-world
-            behavior can therefore inform the design of laboratory tasks as
-            well as test their validity.
+            A difference between laboratory preferences and real-world,
+            high-stakes choices need not mean that a person's risk preference
+            has changed. The environment may instead change their goals, what
+            they compare an outcome against, or how they understand the problem.
+            Language and behavioral trajectories can provide additional
+            constraints on these explanations, helping specify candidate
+            processes and ways to test them.
+          </p>
+          <p>
+            The research path is to identify situations where laboratory
+            predictions fail, propose a missing process, and manipulate that
+            process under controlled conditions. The crucial test is then
+            whether a model incorporating it predicts previously unobserved
+            real-world choices. This makes real-world behavior a source of
+            better laboratory experiments and revised cognitive explanations,
+            as well as a test of their validity.
           </p>
           <p>
             Our work on automated cognitive model discovery asks whether
