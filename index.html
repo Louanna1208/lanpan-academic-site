@@ -3,13 +3,24 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Lan Pan studies how evidence across cognitive tasks can inform predictions of human behavior, guide new experiments, and improve cognitive theories." />
-    <title>Lan Pan | Computational Cognitive Science</title>
-    <link rel="stylesheet" href="styles.css?v=research-questions-1" />
+    <meta name="description" content="Lan Pan works toward a computable, cumulative cognitive science: connecting existing research to new explanations, predictions of behavior, and informative experiments." />
+    <title>About | Lan Pan</title>
+    <link rel="stylesheet" href="styles.css?v=pages-1" />
   </head>
-  <body>
+  <body data-page="about">
     <div class="reading-progress" aria-hidden="true"></div>
     <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" aria-current="page">About</a></li>
+          <li><a href="research.html">Research interests</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
     <main id="main">
       <section class="profile" id="top" aria-labelledby="name">
@@ -17,307 +28,38 @@
           <h1 id="name">Lan Pan</h1>
           <p class="discipline">Computational cognitive science</p>
           <p>
-            I ask when findings from different tasks and settings support the
-            same cognitive explanation. A familiar behavioral pattern does
-            not settle that question: slowing down after a mistake, for
-            example, need not mean that someone is correcting it. Using
-            language, behavioral data, and computational models, I study what
-            these patterns reveal about cognition and when their interpretation
-            changes across tasks. Clearer links between observations and
-            explanations should help us predict behavior we have not yet
-            observed and design experiments that could test, overturn, or
-            improve our theories.
+            How can existing research lead to new knowledge about the mind?
+            This question guides my work toward a <strong>computable,
+            cumulative cognitive science</strong>. I develop ways to represent
+            and connect tasks, constructs, hypotheses, literature evidence,
+            datasets, behavioral trajectories, and latent decision states.
+            These scientific objects are often defined through natural
+            language, paradigm names, or isolated studies; my aim is to make
+            them computable, comparable, testable, and reusable.
+          </p>
+          <p>
+            The purpose is to ask when findings support the same explanation,
+            which cognitive processes are shared or context-dependent, and
+            where theories hold, fail, or need revision. Clearer representations
+            and measurements should help us predict behavior we have not yet
+            observed and decide how to test, overturn, or improve our
+            explanations. Computational representations, analysis agents, and
+            large-scale data are means toward this scientific goal.
           </p>
           <p>
             I work with Robert C. Wilson and Hanbo Xie at Georgia Tech,
             Sebastian Musslick at Osnabr&uuml;ck University, and Akshay K.
             Jagadish and Younes Strittmatter at Princeton University.
           </p>
-          <div class="profile-links" aria-label="Profile links">
-            <a href="mailto:louannapan@gmail.com">Email</a>
+          <div class="profile-links">
             <a href="assets/LanPan_CV.pdf">CV</a>
-            <a href="https://scholar.google.com/citations?user=BpeAgqIAAAAJ&amp;hl=zh-CN">Google Scholar</a>
-            <a href="https://github.com/Louanna1208">GitHub</a>
-            <a href="https://x.com/LanPan1208">X</a>
-            <a href="https://www.linkedin.com/in/lanpan/">LinkedIn</a>
           </div>
         </div>
         <figure class="portrait">
           <img class="profile-photo" src="Weixin%20Image_20250201191310.jpg" alt="Lan Pan" width="174" height="212" />
         </figure>
       </section>
-
-      <section id="research" aria-labelledby="research-title">
-        <h2 id="research-title">Research interests</h2>
-        <p class="research-intro">
-          My aim is a computable, cumulative cognitive science in which
-          evidence from different studies helps us test and revise explanations
-          of behavior. This requires connecting the claims made in papers to
-          what experiments manipulate and what people actually do. The four
-          interests below ask whether studies address the same claim, whether
-          tasks engage related processes, what behavioral effects mean, and
-          whether our explanations predict choices beyond the laboratory.
-          Each should help identify what to test next, not just organize what
-          we already know.
-        </p>
-
-        <figure class="research-framework" aria-labelledby="framework-caption">
-          <figcaption id="framework-caption">From existing evidence to new predictions and experiments</figcaption>
-          <ol class="framework-path">
-            <li>
-              <a href="#representations">
-                <strong>Align representations</strong>
-                <span>When do studies test the same claim, and which theoretically important conditions remain untested?</span>
-              </a>
-            </li>
-            <li>
-              <a href="#task-relations">
-                <strong>Measure task relations</strong>
-                <span>Which behavioral patterns transfer across tasks, and can task structure predict transfer in a new experiment?</span>
-              </a>
-            </li>
-            <li>
-              <a href="#effect-boundaries">
-                <strong>Interpret behavioral effects</strong>
-                <span>When does slowing after an error accompany better performance, and what explains when it does not?</span>
-              </a>
-            </li>
-            <li>
-              <a href="#real-world">
-                <strong>Test real-world validity</strong>
-                <span>Which processes are missing when laboratory predictions fail, and can revised models predict new real-world choices?</span>
-              </a>
-            </li>
-          </ol>
-        </figure>
-
-        <article id="representations" class="research-topic" aria-labelledby="representations-title">
-          <h3 id="representations-title">Aligning scientific representations</h3>
-          <p class="research-question">
-            Once studies become comparable, which untested predictions and
-            decisive experiments become identifiable?
-          </p>
-          <p>
-            Hypotheses, experimental manipulations, behavioral effects, and
-            computational models express different aspects of a scientific
-            claim. I am interested in making their relationships explicit so we can assess
-            whether they provide evidence about the same mechanism.
-          </p>
-          <p>
-            Comparing studies should help us see what the evidence already
-            tells us and what still needs to be tested. For example, two
-            theories may explain the same existing results but predict different
-            outcomes when an experimental condition changes. An experiment
-            under that condition could help distinguish the theories. I want
-            to connect hypotheses with the experiments that test them so we
-            can identify these unresolved questions and decide which experiment
-            would help answer them.
-          </p>
-          <p>
-            Our hypothesis-literature matching work asks whether a proposed
-            hypothesis has already been tested, even when the relevant studies
-            use different terminology. We represent both the query and claims
-            extracted from paper abstracts in terms of their predictor and
-            outcome constructs, the relationship between them, and any stated
-            conditions. This makes it possible to distinguish papers that
-            discuss related concepts from those that support or contradict the
-            specific claim.
-          </p>
-          <p>
-            In an evaluation using 107 expert-extracted hypothesis-paper pairs
-            and 1,605 synthetic unsupported hypotheses, construct-level matching
-            correctly rejected 87&ndash;90% of the unsupported hypotheses,
-            compared with 31&ndash;40% when asking an LLM directly. The
-            contribution is a testable way to compare claims beyond wording,
-            while separating conceptual overlap from evidence for a particular
-            relationship. It provides a first step toward comparing evidence
-            across differences in terminology.
-          </p>
-          <p class="citation">
-            <strong>Pan, L.</strong>, &amp; Musslick, S. (2026).
-            Has someone already tested this? Construct-level hypothesis-literature matching.
-            <em>Discovery Science 2026</em> (accepted).
-          </p>
-          <p class="ongoing">
-            <strong>Ongoing.</strong> Extending this question to experimental
-            factors and task structure through event-state representations,
-            with cognitive control as an initial domain.
-          </p>
-        </article>
-
-        <article id="task-relations" class="research-topic" aria-labelledby="tasks-title">
-          <h3 id="tasks-title">Measuring relationships between tasks</h3>
-          <p class="research-question">
-            Can a task's structure predict its transfer pattern, and can that
-            prediction guide the design of a new experiment?
-          </p>
-          <p>
-            Do task labels and descriptions capture the processes expressed in
-            human behavior? Tasks that sound similar may recruit different
-            processes, while differently named tasks may share computational
-            structure. I am interested in measuring these relationships through
-            behavior and comparing them with expert classifications and
-            semantic similarity.
-          </p>
-          <p class="ongoing">
-            <strong>Ongoing.</strong> Using LLM fine-tuning as a measurement tool:
-            within a common model backbone, an adapter is trained on human
-            behavior from one task and evaluated on whether it improves
-            prediction of human behavior in another. Transfer patterns define
-            an operational measure of behavioral-computational relationships;
-            further tests examine which behavioral features account for them.
-          </p>
-          <p>
-            A next question is whether a new task's experimental structure can
-            predict its transfer relationships before its behavioral data are
-            collected. Suppose transfer appears to depend on action-outcome
-            contingencies rather than a task's cover story. We could then
-            predict how transfer should change when contingencies change but
-            the story stays fixed, and compare this with changing the story
-            while preserving the contingencies. Such experiments would test
-            what accounts for the measured task relationships. Connecting this
-            model-based measure to human cognitive mechanisms requires
-            independent behavioral tests.
-          </p>
-          <p>
-            Our exploration study provides a methodological foundation for this
-            approach. We compared language models with 29,493 human players in
-            an open-ended discovery game, examining two strategies: seeking
-            uncertain outcomes and choosing actions that expand future
-            possibilities, known as empowerment. Humans used both, whereas
-            several non-reasoning models relied more heavily on uncertainty
-            and made less use of empowerment.
-          </p>
-          <p>
-            Sparse autoencoders identified internal features associated with
-            these theory-defined quantities. In LLaMA-3.1-70B, uncertainty and
-            choice-related signals were strongest in early layers, while
-            empowerment was represented most strongly later in the network.
-            Ablating an empowerment-related feature selectively reduced
-            empowerment-guided behavior, linking the representation to the
-            model's strategy through intervention. Together, these analyses
-            connect behavioral patterns, cognitive theory, and internal
-            computation. They motivate using language models as measurement
-            tools for studying cognitive processes, with representations that
-            can be examined and experimentally perturbed.
-          </p>
-          <p class="citation">
-            <strong>Pan, L.</strong><sup>*</sup>, Xie, H.<sup>*</sup>, &amp; Wilson, R. C. (2025).
-            <a href="https://proceedings.neurips.cc/paper_files/paper/2025/file/945c4b5d6daf5294befbc5b7c275c300-Paper-Conference.pdf">Large language models think too fast to explore effectively.</a>
-            <em>Advances in Neural Information Processing Systems, 38</em>, 102480-102508.
-            <a class="paper-link" href="https://doi.org/10.52202/085713-3428">[DOI]</a>
-            <a class="paper-link" href="https://arxiv.org/abs/2501.18009">[arXiv]</a>
-          </p>
-          <p class="citation-note"><sup>*</sup> Equal contribution.</p>
-        </article>
-
-        <article id="effect-boundaries" class="research-topic" aria-labelledby="effects-title">
-          <h3 id="effects-title">Interpreting behavioral effects</h3>
-          <p class="research-question">
-            People often slow down after making a mistake. But does slowing
-            down actually mean they are correcting themselves?
-          </p>
-          <p>
-            Slower responses could reflect greater caution, but they could
-            also reflect surprise or difficulty returning attention to the
-            task. My ongoing PSYCHE work asks whether post-error slowing is
-            a reliable sign of successful adaptation: when people become
-            slower after an error, do their next decisions become more
-            accurate?
-          </p>
-          <p>
-            Our current cross-experiment analyses find slowing on average,
-            with substantial differences across studies. Rarer errors and
-            clearer feedback are associated with greater slowing, and these
-            features help predict its magnitude in studies left out when
-            fitting the model. Yet many experiments show slower but less
-            accurate responses after errors. Across studies, the size of the
-            slowing does not reliably indicate whether accuracy improves.
-          </p>
-          <p>
-            These findings question the use of slowing alone as evidence of
-            successful error correction. They do not rule out adaptive
-            adjustments that are outweighed by other costs. The next question
-            is what separates slowing that accompanies improved performance
-            from slowing that does not. I want to use these cross-study
-            patterns to select controlled tests of candidate explanations,
-            then ask whether those explanations predict both response time
-            and accuracy in new experiments.
-          </p>
-          <p class="ongoing">
-            <strong>Ongoing &middot; PSYCHE.</strong> I built the agent and
-            conduct cross-experiment analyses, working with Akshay K. Jagadish
-            and Younes Strittmatter on a behavioral database developed by
-            collaborators. The agent helps researchers identify and analyze
-            relevant datasets; these capabilities make it possible to examine
-            how a behavioral pattern and its interpretation vary across
-            experiments.
-          </p>
-        </article>
-
-        <article id="real-world" class="research-topic" aria-labelledby="decisions-title">
-          <h3 id="decisions-title">Understanding real-world decisions</h3>
-          <p class="research-question">
-            When laboratory theories fail to predict real-world choices, which
-            processes are missing, and can incorporating them improve
-            predictions in new situations?
-          </p>
-          <p>
-            A difference between laboratory preferences and real-world,
-            high-stakes choices need not mean that a person's risk preference
-            has changed. The environment may instead change their goals, what
-            they compare an outcome against, or how they understand the problem.
-            Language and behavioral trajectories can provide additional
-            constraints on these explanations, helping specify candidate
-            processes and ways to test them.
-          </p>
-          <p>
-            The research path is to identify situations where laboratory
-            predictions fail, propose a missing process, and manipulate that
-            process under controlled conditions. The crucial test is then
-            whether a model incorporating it predicts previously unobserved
-            real-world choices. This makes real-world behavior a source of
-            better laboratory experiments and revised cognitive explanations,
-            as well as a test of their validity.
-          </p>
-          <p>
-            Our work on automated cognitive model discovery asks whether
-            people's verbal accounts can help distinguish explanations that
-            their choices alone leave unresolved. Using risky decisions from
-            72 participants, we compared LLM-generated cognitive models
-            discovered from choices alone with models discovered from choices
-            and think-aloud reports together. Adding language improved model
-            fit on held-out decisions at the group level.
-          </p>
-          <p>
-            Crucially, language changed the computational structures of the
-            discovered models, not just their fit: 69.4% of participants'
-            best-fitting models moved to a different structural family. A
-            common shift was from explicitly comparing option values to first
-            transforming and integrating information within each option.
-            These results show that verbal reports can constrain which
-            explanations model discovery selects, beyond what behavior alone
-            provides. This offers a basis for investigating how subjective
-            interpretations shape decisions, without assuming that a better
-            fit by itself establishes the underlying human mechanism.
-          </p>
-          <p class="citation">
-            Xie, H., Jagadish, A. K., <strong>Pan, L.</strong>, &amp; Wilson, R. C. (2026).
-            <a href="https://openreview.net/pdf?id=sARYvBPnx5"><em>Think-aloud reshapes automated cognitive model discovery beyond behavior</em></a>
-            [Conference presentation]. 9th Annual Conference on Cognitive
-            Computational Neuroscience (CCN).
-            <a class="paper-link" href="https://arxiv.org/abs/2605.05091">[arXiv]</a>
-          </p>
-          <p class="ongoing">
-            <strong>Ongoing.</strong> Studying consequential choices in settings
-            where options, outcomes, and timing can be reconstructed, to test
-            how subjective problem representations and decision mechanisms
-            change beyond the laboratory.
-          </p>
-        </article>
-      </section>
-
     </main>
-    <script src="script.js?v=personal-2"></script>
+    <script src="script.js?v=pages-1"></script>
   </body>
 </html>

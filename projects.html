@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Published and ongoing work by Lan Pan on cognitive representations, behavioral transfer, cumulative evidence, and decision making." />
+    <title>Projects | Lan Pan</title>
+    <link rel="stylesheet" href="styles.css?v=pages-1" />
+  </head>
+  <body>
+    <div class="reading-progress" aria-hidden="true"></div>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">About</a></li>
+          <li><a href="research.html">Research interests</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main" class="page-content">
+      <h1 class="page-title">Projects</h1>
+      <nav aria-label="Project index">
+        <ul class="project-index">
+          <li><a href="#hypothesis-matching">Hypothesis-literature matching</a><span>Discovery Science 2026</span></li>
+          <li><a href="#exploration">LLM exploration</a><span>NeurIPS 2025</span></li>
+          <li><a href="#think-aloud">Think-aloud model discovery</a><span>CCN 2026</span></li>
+          <li><a href="#task-space">Behavioral-Computational Task Space</a><span>Ongoing</span></li>
+          <li><a href="#experimental-representations">Experimental representations</a><span>Ongoing</span></li>
+          <li><a href="#psyche">PSYCHE</a><span>Ongoing</span></li>
+          <li><a href="#real-world-decisions">Real-world decision mechanisms</a><span>Ongoing</span></li>
+        </ul>
+      </nav>
+
+      <article id="hypothesis-matching" class="project-entry" aria-labelledby="hypothesis-title">
+        <h2 id="hypothesis-title">Hypothesis-literature matching</h2>
+        <p>
+          Our hypothesis-literature matching work asks whether a proposed
+          hypothesis has already been tested, even when the relevant studies
+          use different terminology. We represent both the query and claims
+          extracted from paper abstracts in terms of their predictor and
+          outcome constructs, the relationship between them, and any stated
+          conditions. This makes it possible to distinguish papers that
+          discuss related concepts from those that support or contradict the
+          specific claim.
+        </p>
+        <p>
+          In an evaluation using 107 expert-extracted hypothesis-paper pairs
+          and 1,605 synthetic unsupported hypotheses, construct-level matching
+          correctly rejected 87&ndash;90% of the unsupported hypotheses,
+          compared with 31&ndash;40% when asking an LLM directly. The
+          contribution is a testable way to compare claims beyond wording,
+          while separating conceptual overlap from evidence for a particular
+          relationship. It provides a first step toward comparing evidence
+          across differences in terminology.
+        </p>
+        <p class="citation">
+          <strong>Pan, L.</strong>, &amp; Musslick, S. (2026).
+          Has someone already tested this? Construct-level hypothesis-literature matching.
+          <em>Discovery Science 2026</em> (accepted).
+        </p>
+        <p class="interest-link"><a href="research.html#representations">Aligning scientific representations</a></p>
+      </article>
+
+      <article id="exploration" class="project-entry" aria-labelledby="exploration-title">
+        <h2 id="exploration-title">LLM exploration</h2>
+        <p>
+          Our published exploration study provides a methodological
+          foundation: model behavior can be measured, and internal
+          representations can be analyzed and perturbed. This makes language
+          models a tool for investigating cognitive processes, beyond
+          evaluating how well they perform a task. We compared language
+          models with 29,493 human players in an open-ended discovery game,
+          examining two strategies: seeking uncertain outcomes and choosing
+          actions that expand future possibilities, known as empowerment.
+          Humans used both, whereas several non-reasoning models relied more
+          heavily on uncertainty and made less use of empowerment. Reasoning
+          models performed much better, showing that these limitations were
+          not shared by all language models.
+        </p>
+        <p>
+          Sparse autoencoders identified internal features associated with
+          these theory-defined quantities. Ablating an empowerment-related
+          feature selectively reduced empowerment-guided behavior, linking
+          the representation to the model's strategy through intervention.
+          Together, these analyses connect behavioral patterns, cognitive
+          theory, and internal computation. They also distinguish representing
+          a strategy from using it effectively in a choice. This motivates
+          studying task relationships through both behavior and model
+          representations, while leaving open which findings generalize to
+          human cognition.
+        </p>
+        <p class="citation">
+          <strong>Pan, L.</strong><sup>*</sup>, Xie, H.<sup>*</sup>, &amp; Wilson, R. C. (2025).
+          <a href="https://proceedings.neurips.cc/paper_files/paper/2025/file/945c4b5d6daf5294befbc5b7c275c300-Paper-Conference.pdf">Large language models think too fast to explore effectively.</a>
+          <em>Advances in Neural Information Processing Systems, 38</em>, 102480-102508.
+          <a class="paper-link" href="https://doi.org/10.52202/085713-3428">[DOI]</a>
+          <a class="paper-link" href="https://arxiv.org/abs/2501.18009">[arXiv]</a>
+        </p>
+        <p class="citation-note"><sup>*</sup> Equal contribution.</p>
+        <p class="interest-link"><a href="research.html#task-relations">Measuring relationships between tasks</a></p>
+      </article>
+
+      <article id="think-aloud" class="project-entry" aria-labelledby="think-aloud-title">
+        <h2 id="think-aloud-title">Think-aloud model discovery</h2>
+        <p>
+          Our work on automated cognitive model discovery asks whether
+          people's verbal accounts can help distinguish explanations that
+          their choices alone leave unresolved. Using risky decisions from
+          72 participants, we compared LLM-generated cognitive models
+          discovered from choices alone with models discovered from choices
+          and think-aloud reports together. Adding language improved model
+          fit on held-out decisions at the group level.
+        </p>
+        <p>
+          Crucially, language changed the computational structures of the
+          discovered models, not just their fit: 69.4% of participants'
+          best-fitting models moved to a different structural family. A
+          common shift was from explicitly comparing option values to first
+          transforming and integrating information within each option.
+          These results show that verbal reports can constrain which
+          explanations model discovery selects, beyond what behavior alone
+          provides. This offers a basis for investigating how subjective
+          interpretations shape decisions, without assuming that a better
+          fit by itself establishes the underlying human mechanism.
+        </p>
+        <p class="citation">
+          Xie, H., Jagadish, A. K., <strong>Pan, L.</strong>, &amp; Wilson, R. C. (2026).
+          <a href="https://openreview.net/pdf?id=sARYvBPnx5"><em>Think-aloud reshapes automated cognitive model discovery beyond behavior</em></a>
+          [Conference presentation]. 9th Annual Conference on Cognitive
+          Computational Neuroscience (CCN).
+          <a class="paper-link" href="https://arxiv.org/abs/2605.05091">[arXiv]</a>
+        </p>
+        <p class="interest-link"><a href="research.html#real-world">Understanding real-world decisions</a></p>
+      </article>
+
+      <article id="task-space" class="project-entry ongoing-project" aria-labelledby="task-space-title">
+        <p class="project-status">Ongoing</p>
+        <h2 id="task-space-title">Behavioral-Computational Task Space</h2>
+        <p>
+          I use LLM fine-tuning as a measurement tool: within a common model
+          backbone, an adapter is trained on human behavior from one task
+          and evaluated on whether it improves prediction of human behavior
+          in another. Our current analyses find structured transfer patterns
+          that are not well explained by task labels or semantic similarity.
+          This provides an operational measure of task relationships, not
+          direct evidence that people transfer learning in the same way.
+        </p>
+        <p class="interest-link"><a href="research.html#task-relations">Measuring relationships between tasks</a></p>
+      </article>
+
+      <article id="experimental-representations" class="project-entry ongoing-project" aria-labelledby="experimental-title">
+        <p class="project-status">Ongoing</p>
+        <h2 id="experimental-title">Experimental representations</h2>
+        <p>
+          I am extending construct-level comparison to experimental factors
+          and task structure through event-state representations, with
+          cognitive control as an initial domain. The aim is to compare what
+          experiments actually manipulate and measure, rather than rely on
+          paradigm names, and identify changes that would test a theory's
+          proposed scope.
+        </p>
+        <p class="interest-link"><a href="research.html#representations">Aligning scientific representations</a></p>
+      </article>
+
+      <article id="psyche" class="project-entry ongoing-project" aria-labelledby="psyche-title">
+        <p class="project-status">Ongoing</p>
+        <h2 id="psyche-title">PSYCHE</h2>
+        <p>
+          PSYCHE is a collaborative effort to turn dispersed behavioral
+          datasets into a living evidence base that can be updated, checked
+          against its sources, and reused. Working with Akshay K. Jagadish and
+          Younes Strittmatter on a database developed by collaborators, I built
+          the analysis agent and conduct cross-experiment analyses. The agent
+          helps researchers identify relevant datasets, review an analysis
+          plan, and examine results with their sources. This supports asking
+          a common question across many experiments, including questions the
+          original studies were not designed to address.
+        </p>
+        <p>
+          One current example asks: <strong>people often slow down after
+          making a mistake, but does slowing down mean they are correcting
+          themselves?</strong> Slower responses could reflect greater
+          caution, but also surprise or difficulty returning attention to
+          the task. We distinguish the magnitude of this response from its
+          functional consequence: whether subsequent decisions become more
+          accurate.
+        </p>
+        <p>
+          Our current cross-experiment analyses find slowing on average,
+          with substantial differences across studies. Rarer errors and
+          clearer feedback are associated with greater slowing, and these
+          features help predict its magnitude in studies left out when
+          fitting the model. Yet many experiments show slower but less
+          accurate responses after errors. Across studies, the size of the
+          slowing does not reliably indicate whether accuracy improves.
+        </p>
+        <p>
+          These findings question the use of slowing alone as evidence of
+          successful error correction. They do not rule out adaptive
+          adjustments that are outweighed by other costs. The next question
+          is what separates slowing that accompanies improved performance
+          from slowing that does not. For this case, an explanation should
+          predict both response time and accuracy.
+        </p>
+        <p class="interest-link"><a href="research.html#effect-boundaries">Building cumulative behavioral evidence</a></p>
+      </article>
+
+      <article id="real-world-decisions" class="project-entry ongoing-project" aria-labelledby="real-world-project-title">
+        <p class="project-status">Ongoing</p>
+        <h2 id="real-world-project-title">Real-world decision mechanisms</h2>
+        <p>
+          Studying consequential choices in settings where options, outcomes,
+          and timing can be reconstructed, to test how subjective problem
+          representations and decision mechanisms change beyond the laboratory.
+        </p>
+        <p class="interest-link"><a href="research.html#real-world">Understanding real-world decisions</a></p>
+      </article>
+    </main>
+    <script src="script.js?v=pages-1"></script>
+  </body>
+</html>

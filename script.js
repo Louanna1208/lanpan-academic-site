@@ -1,3 +1,25 @@
+// Keep links to the former single-page website working.
+if (document.body.dataset.page === "about") {
+  const previousSections = {
+    "#research": "research.html",
+    "#representations": "research.html#representations",
+    "#task-relations": "research.html#task-relations",
+    "#effect-boundaries": "research.html#effect-boundaries",
+    "#real-world": "research.html#real-world",
+    "#publications": "projects.html",
+    "#projects": "projects.html",
+    "#contact": "contact.html"
+  };
+  const redirectPreviousSection = () => {
+    const destination = previousSections[window.location.hash];
+    if (destination) {
+      window.location.replace(new URL(destination, window.location.href));
+    }
+  };
+  redirectPreviousSection();
+  window.addEventListener("hashchange", redirectPreviousSection);
+}
+
 const progress = document.querySelector(".reading-progress");
 let scheduled = false;
 

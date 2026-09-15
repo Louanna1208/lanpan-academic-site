@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Lan Pan's research interests: aligning scientific representations, measuring task relationships, building cumulative evidence, and understanding real-world decisions." />
+    <title>Research interests | Lan Pan</title>
+    <link rel="stylesheet" href="styles.css?v=pages-1" />
+  </head>
+  <body>
+    <div class="reading-progress" aria-hidden="true"></div>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">About</a></li>
+          <li><a href="research.html" aria-current="page">Research interests</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main" class="page-content">
+      <section id="research" aria-labelledby="research-title">
+        <h1 id="research-title" class="page-title">Research interests</h1>
+        <p class="research-intro">
+          Advances in language models and representation learning make it
+          increasingly practical to connect information across large
+          collections of papers and behavioral datasets. My work brings
+          together two foundations: reusable behavioral evidence and methods
+          for comparing claims, tasks, and cognitive processes. The four
+          interests below connect these foundations to questions about human
+          cognition. They are complementary ways to develop and test
+          explanations, rather than stages that every project must follow.
+        </p>
+
+        <figure class="research-framework" aria-labelledby="framework-caption">
+          <figcaption id="framework-caption">From existing evidence to new predictions and experiments</figcaption>
+          <ol class="framework-path">
+            <li>
+              <a href="#representations">
+                <strong>Align representations</strong>
+                <span>When do studies test the same claim, and which theoretically important conditions remain untested?</span>
+              </a>
+            </li>
+            <li>
+              <a href="#task-relations">
+                <strong>Measure task relations</strong>
+                <span>Which behavioral patterns transfer across tasks, and can task structure predict transfer in a new experiment?</span>
+              </a>
+            </li>
+            <li>
+              <a href="#effect-boundaries">
+                <strong>Build cumulative evidence</strong>
+                <span>When does an effect appear, disappear, or reverse, and what would explain and predict those changes?</span>
+              </a>
+            </li>
+            <li>
+              <a href="#real-world">
+                <strong>Test real-world validity</strong>
+                <span>Which processes are missing when laboratory predictions fail, and can revised models predict new real-world choices?</span>
+              </a>
+            </li>
+          </ol>
+          <p class="framework-feedback">
+            Results from new experiments should, in turn, revise how we
+            represent tasks and explain behavior.
+          </p>
+        </figure>
+
+        <article id="representations" class="research-topic" aria-labelledby="representations-title">
+          <h2 id="representations-title">Aligning scientific representations</h2>
+          <p class="research-question">
+            When do differently described studies test the same claim, and
+            what experiment would distinguish competing explanations?
+          </p>
+          <p>
+            A claim can be stated in a paper, tested through a task, and
+            explained by a computational model. But shared terminology does
+            not guarantee that two studies test the same claim, and different
+            terminology can obscure a genuine connection. I am interested in
+            making the relationships among claims, manipulations, measurements,
+            and models explicit, so we can assess when findings provide
+            evidence about the same mechanism.
+          </p>
+          <p>
+            Comparing studies should help us see what the evidence already
+            tells us and what still needs to be tested. For example, two
+            theories may explain the same existing results but predict different
+            outcomes when an experimental condition changes. An experiment
+            under that condition could help distinguish the theories. I want
+            to connect hypotheses with the experiments that test them so we
+            can identify these unresolved questions and decide which experiment
+            would help answer them.
+          </p>
+          <div class="related-work" aria-label="Related projects">
+            <span>Related work</span>
+            <a href="projects.html#hypothesis-matching">Hypothesis-literature matching</a>
+            <a href="projects.html#experimental-representations">Experimental representations</a>
+          </div>
+        </article>
+
+        <article id="task-relations" class="research-topic" aria-labelledby="tasks-title">
+          <h2 id="tasks-title">Measuring relationships between tasks</h2>
+          <p class="research-question">
+            Can a task's structure predict its transfer pattern, and can that
+            prediction guide the design of a new experiment?
+          </p>
+          <p>
+            Do task labels and descriptions capture the processes expressed in
+            human behavior? Tasks that sound similar may recruit different
+            processes, while differently named tasks may share computational
+            structure. I am interested in measuring these relationships through
+            behavior and comparing them with expert classifications and
+            semantic similarity.
+          </p>
+          <p>
+            Task Space measures relationships through behavioral transfer;
+            experimental representations make task structure explicit. I want
+            to test whether these two descriptions can predict one another,
+            and use their disagreements to identify informative experiments.
+          </p>
+          <p>
+            A next question is whether a new task's experimental structure can
+            predict its transfer relationships before its behavioral data are
+            collected. Suppose transfer appears to depend on action-outcome
+            contingencies rather than a task's cover story. We could then
+            predict how transfer should change when contingencies change but
+            the story stays fixed, and compare this with changing the story
+            while preserving the contingencies. Such experiments would test
+            what accounts for the measured task relationships. Connecting this
+            model-based measure to human cognitive mechanisms requires
+            independent behavioral tests.
+          </p>
+          <div class="related-work" aria-label="Related projects">
+            <span>Related work</span>
+            <a href="projects.html#task-space">Behavioral-Computational Task Space</a>
+            <a href="projects.html#exploration">LLM exploration</a>
+          </div>
+        </article>
+
+        <article id="effect-boundaries" class="research-topic" aria-labelledby="effects-title">
+          <h2 id="effects-title">Building cumulative behavioral evidence</h2>
+          <p class="research-question">
+            When does a behavioral effect support the same explanation across
+            experiments, and what can its boundaries tell us to test next?
+          </p>
+          <p>
+            Comparing experimental contexts lets us ask more than whether an
+            effect holds on average. Where does it appear, disappear, or
+            reverse? Does the same behavioral pattern have the same meaning
+            across settings? My interest is in using these comparisons to
+            explain why an effect changes and predict what will happen under
+            conditions that have not yet been tested.
+          </p>
+          <p>
+            More broadly, I want to use cross-study patterns to locate
+            conditions where competing explanations predict different
+            outcomes, then test those predictions in new experiments.
+            The scientific value of a boundary is the opportunity to explain
+            and predict what happens on either side of it.
+          </p>
+          <div class="related-work" aria-label="Related projects">
+            <span>Related work</span>
+            <a href="projects.html#psyche">PSYCHE</a>
+          </div>
+        </article>
+
+        <article id="real-world" class="research-topic" aria-labelledby="decisions-title">
+          <h2 id="decisions-title">Understanding real-world decisions</h2>
+          <p class="research-question">
+            When laboratory theories fail to predict real-world choices, which
+            processes are missing, and can incorporating them improve
+            predictions in new situations?
+          </p>
+          <p>
+            A difference between laboratory preferences and real-world,
+            high-stakes choices need not mean that a person's risk preference
+            has changed. The environment may instead change their goals, what
+            they compare an outcome against, or how they understand the problem.
+            Can language and behavioral trajectories provide independent
+            measures of these goals and comparison standards, rather than
+            inferring them only from choices? Such measurements could help
+            distinguish explanations that make similar predictions in the
+            laboratory but diverge in a new context.
+          </p>
+          <p>
+            The research path is to identify situations where laboratory
+            predictions fail, propose a missing process, and manipulate that
+            process under controlled conditions. The crucial test is then
+            whether a model incorporating it predicts previously unobserved
+            real-world choices. This makes real-world behavior a source of
+            better laboratory experiments and revised cognitive explanations,
+            as well as a test of their validity.
+          </p>
+          <div class="related-work" aria-label="Related projects">
+            <span>Related work</span>
+            <a href="projects.html#think-aloud">Think-aloud model discovery</a>
+            <a href="projects.html#real-world-decisions">Real-world decision mechanisms</a>
+          </div>
+        </article>
+        <p class="research-outlook">
+          Longer term, I am interested in how AI systems form, express,
+          compress, and revise cognitive rules. Connecting task structure,
+          behavior, and internal representations could help test when a stated
+          rule actually governs a system's decisions, and what makes that rule
+          change.
+        </p>
+      </section>
+    </main>
+    <script src="script.js?v=pages-1"></script>
+  </body>
+</html>
