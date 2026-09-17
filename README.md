@@ -8,6 +8,7 @@ Source for Lan Pan's academic website:
 - `index.html` - About page and CV link
 - `research.html` - research interests and framework
 - `projects.html` - published and ongoing projects
+- `research-atlas.html` - Research Atlas story, design principles, and public app links
 - `blog.html` - blog index
 - `contact.html` - email and profile links
 - `styles.css` - visual design and responsive layout

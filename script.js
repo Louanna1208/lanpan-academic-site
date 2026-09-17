@@ -1,4 +1,8 @@
 // Keep links to the former single-page website working.
+if (window.location.pathname.endsWith("/projects.html") && window.location.hash === "#research-atlas") {
+  window.location.replace(new URL("research-atlas.html", window.location.href));
+}
+
 if (document.body.dataset.page === "about") {
   const previousSections = {
     "#research": "research.html",

@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Why I built Research Atlas: a free, open-source workspace for remembering why ideas mattered, connecting old questions with new possibilities, and keeping track of changing research judgments." />
+    <title>Research Atlas | Lan Pan</title>
+    <link rel="stylesheet" href="styles.css?v=atlas-page-1" />
+  </head>
+  <body>
+    <div class="reading-progress" aria-hidden="true"></div>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">About</a></li>
+          <li><a href="research.html">Research interests</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="research-atlas.html" aria-current="page">Research Atlas</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main" class="page-content">
+      <article class="atlas-story" aria-labelledby="atlas-title">
+        <header>
+          <h1 id="atlas-title" class="page-title">Research Atlas</h1>
+          <p class="discipline">A place to return to your research ideas.</p>
+          <p class="atlas-links">
+            <a href="https://louanna1208.github.io/research-atlas/">Try the example</a>
+            <a href="https://github.com/Louanna1208/research-atlas">GitHub</a>
+            <a href="https://github.com/Louanna1208/research-atlas/issues">Share feedback</a>
+          </p>
+        </header>
+
+        <section aria-labelledby="why-atlas">
+          <h2 id="why-atlas">Why I built it</h2>
+          <p>
+            Recently, as I have been preparing my PhD applications and looking
+            back over my research, I have noticed how much a research process
+            leaves behind: papers, half-formed ideas, analysis notes, feedback,
+            unfinished experiments, and decisions made in conversation.
+          </p>
+          <p>
+            When I return to those materials, the hardest part is often
+            recovering what I was thinking at the time:
+          </p>
+          <ul class="atlas-questions">
+            <li>Why did this idea excite me?</li>
+            <li>Why did I put it aside?</li>
+            <li>Was I missing data or a method, or had I not worked out how to test it?</li>
+            <li>Could something I have learned since make it possible now?</li>
+          </ul>
+          <p>
+            I also discuss research with AI often. A single conversation can
+            produce several directions worth considering. Even when I save
+            them, they can gradually disappear into an old chat.
+          </p>
+          <p>
+            So I built a small tool called <strong>Research Atlas</strong>,
+            to give these ideas a place I can keep coming back to. It connects
+            questions, papers, ideas, methods, projects, and reflections, while
+            keeping the reasons behind those connections and the changes in
+            my judgment.
+          </p>
+          <p>
+            Imagine putting a question aside because you cannot measure a
+            particular process. A few months later, you learn a new method.
+            Returning to that record lets you ask something specific: could
+            this method address the original bottleneck? What would be worth
+            testing first?
+          </p>
+        </section>
+
+        <section aria-labelledby="atlas-design">
+          <h2 id="atlas-design">The thinking behind it</h2>
+          <p>
+            In designing the tool with an AI assistant, I kept returning to
+            one idea: a research workspace should preserve the thinking behind
+            the work, not just its outputs. Three principles helped shape it.
+          </p>
+          <h3>Keep the bottleneck with the idea</h3>
+          <p>
+            "Needs more work" tells me very little months later. "Our current
+            measurement cannot distinguish these two explanations" gives me
+            something concrete to reconsider. A paused idea can remain useful
+            if I remember what stopped it and what would make it worth revisiting.
+          </p>
+          <h3>Let new knowledge meet old questions</h3>
+          <p>
+            A course, a paper, a conversation, a new dataset, or a collaborator
+            can change what is possible. I want the map to help bring those
+            experiences into contact with questions I already care about.
+            A useful connection explains which obstacle might now be addressed,
+            rather than simply noting that two things seem similar.
+          </p>
+          <h3>Remember why your judgment changed</h3>
+          <p>
+            Why did I choose a small pilot over a larger study? What feedback
+            made me revise a question? What result persuaded me to pause?
+            Keeping those reasons makes it possible to see how my interests,
+            capabilities, and sense of a worthwhile research question develop.
+          </p>
+          <p>
+            I also want it to leave room for unfinished thinking. A long-term
+            question may lead to several different ideas; an idea can be tested
+            with a small attempt before it becomes a project. Recording an
+            interest should not turn it into an obligation. Learning and a
+            well-reasoned pause can count as progress too.
+          </p>
+        </section>
+
+        <section aria-labelledby="atlas-return">
+          <h2 id="atlas-return">Something worth returning to</h2>
+          <p>
+            Whether you are preparing to apply for a PhD, just starting one,
+            or already juggling many projects and ideas, I hope Research Atlas
+            can help you gradually build your own research map.
+          </p>
+          <p class="atlas-takeaway">
+            Two months later, you should be able to reopen an old idea,
+            remember why it interested you, see what has changed, and decide
+            on a concrete next step.
+          </p>
+          <p>
+            Research Atlas is open source and free to use. Your workspace is
+            saved in your own browser, with no account required. There is a
+            complete fictional example to explore before you start your own.
+            Browser storage is not a backup, so export a copy of work you want
+            to keep.
+          </p>
+          <p>
+            I would really like to hear how it works for you. How do you keep
+            track of your research thinking now? What is easiest to forget?
+            What would make this a tool you keep using?
+            <a href="https://github.com/Louanna1208/research-atlas/issues">Share your experience on GitHub</a>
+            or <a href="mailto:louannapan@gmail.com">email me</a>.
+          </p>
+        </section>
+      </article>
+    </main>
+    <script src="script.js?v=atlas-page-1"></script>
+  </body>
+</html>
