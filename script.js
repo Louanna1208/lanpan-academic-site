@@ -24,6 +24,22 @@ if (document.body.dataset.page === "about") {
   window.addEventListener("hashchange", redirectPreviousSection);
 }
 
+document.querySelectorAll("[data-bilingual-post]").forEach((post) => {
+  const toggle = post.querySelector(".blog-language-toggle");
+  if (!toggle) return;
+  let language = "en";
+  toggle.hidden = false;
+  toggle.addEventListener("click", () => {
+    language = language === "en" ? "zh" : "en";
+    post.lang = language === "zh" ? "zh-CN" : "en";
+    post.querySelectorAll("[data-post-language]").forEach((section) => {
+      section.hidden = section.dataset.postLanguage !== language;
+    });
+    toggle.textContent = language === "en" ? "中文" : "English";
+    toggle.setAttribute("aria-label", language === "en" ? "Show Chinese version" : "Show English version");
+  });
+});
+
 const progress = document.querySelector(".reading-progress");
 let scheduled = false;
 

@@ -136,6 +136,20 @@ sup { font-size: 10px; line-height: 0; }
 .blog-body { margin: 0 24px; padding: 22px 0 6px; border-top: 1px solid var(--line); }
 .blog-body ol { margin: 0 0 20px; padding-left: 22px; }
 .blog-body li { margin-bottom: 12px; }
+.blog-card-photo { grid-column: 1 / -1; }
+.blog-language-controls { display: flex; justify-content: flex-end; margin-bottom: 16px; }
+.blog-language-toggle { background: transparent; border: 1px solid var(--line); border-radius: 4px; color: var(--link); padding: 4px 10px; font: inherit; font-size: 13px; cursor: pointer; min-height: 32px; }
+.blog-language-toggle:hover { border-color: var(--rose); }
+.blog-language-toggle:focus-visible { outline: 2px solid var(--teal); outline-offset: 4px; }
+.blog-card [hidden] { display: none !important; }
+.blog-poem { max-width: 640px; margin-bottom: 28px; }
+.blog-reflection { padding-bottom: 12px; }
+.blog-reflection + .blog-reflection { padding-top: 24px; border-top: 1px solid var(--line); }
+.blog-entry-date { display: block; margin-bottom: 16px; color: var(--muted); font-size: 13px; font-variant-numeric: tabular-nums; }
+.blog-translation { color: var(--muted); font-family: var(--serif); font-style: italic; }
+.blog-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-bottom: 18px; align-items: start; }
+.blog-gallery a { display: block; min-width: 0; }
+.blog-gallery img { display: block; width: 100%; height: auto; border-radius: 2px; }
 .atlas-story { max-width: 740px; }
 .atlas-story .page-title { margin-bottom: 8px; }
 .atlas-links { display: flex; flex-wrap: wrap; gap: 8px 24px; margin: 0 0 36px; font-size: 14px; }
@@ -156,6 +170,7 @@ sup { font-size: 10px; line-height: 0; }
   .framework-path strong { min-height: 65px; }
 }
 @media (max-width: 620px) {
+  .blog-gallery { grid-template-columns: minmax(0, 1fr); }
   html { scroll-padding-top: 140px; }
   main { padding-right: 22px; padding-left: 22px; }
   .site-nav { padding: 8px 22px; }
