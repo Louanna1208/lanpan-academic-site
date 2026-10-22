@@ -16,6 +16,13 @@ Source for Lan Pan's academic website:
 - `assets/LanPan_CV.pdf` - downloadable curriculum vitae
 - `Weixin Image_20250201191310.jpg` - profile photograph
 
+## Blog updates
+
+In the "Words That Stay With Me" collection, date every entry and keep entries
+in reverse chronological order (newest first). Keep English as the default,
+with the existing Chinese language toggle. Preserve supplied wording unless
+Lan asks for edits.
+
 ## Local preview
 
 Open `index.html` directly in a browser.
