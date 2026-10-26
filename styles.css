@@ -143,6 +143,34 @@ sup { font-size: 10px; line-height: 0; }
 .blog-language-toggle:focus-visible { outline: 2px solid var(--teal); outline-offset: 4px; }
 .blog-card [hidden] { display: none !important; }
 .blog-poem { max-width: 640px; margin-bottom: 28px; }
+.blog-essay { max-width: 700px; margin: 0 auto 24px; overflow-wrap: break-word; }
+.blog-essay h3 { margin: 30px 0 14px; font-size: 20px; color: var(--teal); }
+.blog-essay h4 { margin: 24px 0 10px; font-size: 16px; font-weight: 600; line-height: 1.6; }
+.blog-essay ul { padding-left: 22px; margin: 0 0 18px; }
+.blog-essay li { margin-bottom: 8px; }
+.research-diagram { margin: 26px 0; padding: 20px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.research-diagram figcaption { margin-bottom: 20px; color: var(--muted); font-size: 13px; line-height: 1.65; }
+.mechanism-row { --diagram-color: var(--teal); padding: 16px 0; }
+.mechanism-row + .mechanism-row { border-top: 1px solid var(--line); }
+.mechanism-common { --diagram-color: var(--ochre); }
+.mechanism-learning { --diagram-color: var(--blue); }
+.diagram-label { margin-bottom: 12px; color: var(--diagram-color); font-size: 13px; font-weight: 600; }
+.diagram-chain { display: grid; grid-template-columns: minmax(0, 1fr) 24px minmax(0, 1fr) 24px minmax(0, 1fr); align-items: center; gap: 6px; }
+.diagram-node { display: flex; justify-content: center; align-items: center; min-height: 64px; padding: 10px 8px; border: 1px solid var(--diagram-color); border-radius: 4px; text-align: center; font-size: 14px; line-height: 1.5; overflow-wrap: anywhere; }
+.diagram-arrow { text-align: center; color: var(--diagram-color); font-size: 22px; }
+.diagram-fork { max-width: 480px; margin: 0 auto; }
+.fork-source { width: 75%; margin: 0 auto; }
+.fork-arrows, .fork-targets { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; }
+.fork-arrows { text-align: center; color: var(--diagram-color); font-size: 26px; line-height: 1.4; }
+.blog-essay .thinking-path { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 22px; list-style: none; padding: 0; margin: 0; }
+.thinking-path li { position: relative; min-width: 0; margin: 0; padding-top: 12px; border-top: 2px solid var(--teal); }
+.thinking-path li:nth-child(2) { border-color: var(--rose); }
+.thinking-path li:nth-child(3) { border-color: var(--ochre); }
+.thinking-path li:nth-child(4) { border-color: var(--blue); }
+.thinking-path li:not(:last-child)::after { content: "\2192"; position: absolute; right: -19px; top: 10px; color: var(--muted); }
+.thinking-path strong { display: block; font-size: 14px; margin-bottom: 8px; }
+.thinking-path span { display: block; font-size: 13px; color: var(--muted); line-height: 1.6; }
+.cycle-return { margin: 18px 0 0; padding-top: 12px; border-top: 1px dashed var(--line); font-size: 13px; color: var(--muted); }
 .blog-reflection { padding-bottom: 12px; }
 .blog-reflection + .blog-reflection { padding-top: 24px; border-top: 1px solid var(--line); }
 .blog-entry-date { display: block; margin-bottom: 16px; color: var(--muted); font-size: 13px; font-variant-numeric: tabular-nums; }
@@ -170,6 +198,11 @@ sup { font-size: 10px; line-height: 0; }
   .framework-path strong { min-height: 65px; }
 }
 @media (max-width: 620px) {
+  .blog-essay .thinking-path { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .thinking-path li:not(:last-child)::after { content: "\2193"; top: auto; right: 0; bottom: -24px; }
+  .diagram-chain { grid-template-columns: minmax(0, 1fr); gap: 4px; }
+  .diagram-chain .diagram-arrow { font-size: 0; line-height: 1; }
+  .diagram-chain .diagram-arrow::after { content: "\2193"; font-size: 22px; }
   .blog-gallery { grid-template-columns: minmax(0, 1fr); }
   html { scroll-padding-top: 140px; }
   main { padding-right: 22px; padding-left: 22px; }

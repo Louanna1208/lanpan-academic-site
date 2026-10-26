@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Blog by Lan Pan." />
     <title>Blog | Lan Pan</title>
-    <link rel="stylesheet" href="styles.css?v=blog-reflections-1" />
+    <link rel="stylesheet" href="styles.css?v=blog-diagrams-1" />
     <script src="script.js?v=blog-bilingual-1" defer></script>
   </head>
   <body>
@@ -25,6 +25,271 @@
     <main id="main" class="page-content">
       <h1 class="page-title">Blog</h1>
       <div class="blog-grid">
+        <article id="from-reading-to-questions" class="blog-card blog-card-photo" lang="en" data-bilingual-post>
+          <details>
+            <summary>
+              <h2><span data-post-language="en" lang="en">From Understanding a Paper to Finding a New Question</span><span data-post-language="zh" lang="zh-CN" hidden>从读懂一篇论文，到提出自己的问题</span></h2>
+              <time class="blog-entry-date" datetime="2026-10-26">2026-10-26</time>
+            </summary>
+            <div class="blog-body">
+              <div class="blog-language-controls">
+                <button class="blog-language-toggle" type="button" aria-label="Show Chinese version" aria-controls="research-questions-en research-questions-zh" hidden>中文</button>
+              </div>
+              <div id="research-questions-en" class="blog-essay" data-post-language="en" lang="en">
+                <p>I often begin reading a paper with a fairly modest goal: understand what the authors did and why the result matters. Recently, a discussion of emotion and social decisions took me further than I expected. By the end, I was no longer just trying to understand an explanation. I was asking what would distinguish it from other explanations, and whether I needed to rethink the question itself.</p>
+                <h3>1. How the question developed</h3>
+                <p>I began with <a href="https://doi.org/10.1038/s41562-021-01213-6"><em>Emotion prediction errors guide socially adaptive behaviour</em></a>, by Joseph Heffner, Jae-Young Son, and Oriel FeldmanHall. Emotion prediction errors describe discrepancies between expected and reported feelings. The paper compared their relationship to social choice with that of reward prediction errors, using valence and arousal to represent reported emotion.</p>
+                <p>My questions gradually changed:</p>
+                <ol>
+                  <li><strong>Understanding:</strong> What did the authors find, and how did they compare emotion and reward prediction errors?</li>
+                  <li><strong>Operationalization:</strong> What does representing emotion through valence and arousal capture or leave out?</li>
+                  <li><strong>Measurement validity:</strong> Does the same report mean the same thing across people? Could asking about emotion change it?</li>
+                  <li><strong>Alternative explanations:</strong> Could subjective appraisal contribute to both emotion reports and choices, rather than emotion alone producing choice?</li>
+                  <li><strong>Causal identification:</strong> What intervention would distinguish these accounts?</li>
+                  <li><strong>Boundary conditions:</strong> When might the representation or relationship stop being sufficient?</li>
+                  <li><strong>Generalization:</strong> What differs between imagining a loss, encountering one in a task, and unexpectedly losing money in everyday life?</li>
+                  <li><strong>Reframing:</strong> Should I study not only whether emotion prediction errors predict choice, but how emotional representations arise, are measured, and participate in decisions?</li>
+                </ol>
+                <p>At first, I was asking how an existing framework worked. Later, I was asking why that framework should hold and what might improve it. These are questions generated during the discussion, not established findings or a claim that the paper ignores these issues. The authors themselves leave open how reward and emotion might be integrated into a common value signal.</p>
+                <h3>2. Eight levels of questioning</h3>
+                <p>These levels need not occur in a fixed order. Each helps expose a different assumption between a scientific claim and its evidence.</p>
+                <h4>1. Clarify the claim</h4>
+                <ul>
+                  <li>Is the conclusion descriptive, predictive, or causal?</li>
+                  <li>What has actually been demonstrated, and what has been inferred?</li>
+                  <li>Can I state the claim as a precise, testable proposition?</li>
+                </ul>
+                <p>An emotion-related variable predicting punishment does not, by itself, establish that it causes punishment or identifies an independent cognitive mechanism. Keeping these claims separate prevents predictive success from quietly becoming a stronger explanation than the evidence warrants.</p>
+                <h4>2. Question the construct</h4>
+                <ul>
+                  <li>What exactly does the construct refer to? What does its definition include or exclude?</li>
+                  <li>What assumptions are built into its representation?</li>
+                  <li>Could another representation explain behavior better?</li>
+                </ul>
+                <p>For example, could anger and fear lead to different decisions even when their valence and arousal ratings are similar? Rather than treating this as an established result here, I can turn it into a question: <strong>what is the minimal representation of emotion sufficient to explain and predict behavior?</strong></p>
+                <h4>3. Question the measurement</h4>
+                <ul>
+                  <li>Am I observing the target process or an imperfect proxy?</li>
+                  <li>Does the measure depend on language, memory, interpretation, or judgment?</li>
+                  <li>Does the same value mean the same thing across people and contexts?</li>
+                  <li>Could measurement change the process being measured?</li>
+                </ul>
+                <p>A report of anger might reflect a clearly recognized experience, an inference about how one should feel, attention drawn to an ambiguous feeling by the question, or a personal use of the word. These are candidate reporting processes, not diagnoses of individual participants. The deeper question is: <strong>what measurement process generates the observed data?</strong></p>
+                <h4>4. Generate competing explanations</h4>
+                <p>When an account explains an observation, ask what else could produce that same observation. An emotion-to-choice pathway and a common-appraisal account could both produce an association between reported emotion and choice.</p>
+                <ul>
+                  <li>Which models make indistinguishable predictions in the existing experiment?</li>
+                  <li>Could a hidden variable explain the relationship?</li>
+                  <li>Could a simpler model explain the data?</li>
+                  <li>Am I identifying a new process or renaming an existing one?</li>
+                </ul>
+                <p>The aim shifts from finding an explanation to distinguishing explanations.</p>
+                <figure class="research-diagram mechanism-comparison">
+                  <figcaption>Different explanations, potentially similar observations. These are simplified candidate accounts, not conclusions established by the paper.</figcaption>
+                  <div class="mechanism-row">
+                    <p class="diagram-label">A · Emotion influences the current choice</p>
+                    <div class="diagram-chain"><span class="diagram-node">Outcome</span><span class="diagram-arrow" aria-hidden="true">→</span><span class="diagram-node">Emotion</span><span class="diagram-arrow" aria-hidden="true">→</span><span class="diagram-node">Choice</span></div>
+                  </div>
+                  <div class="mechanism-row mechanism-common">
+                    <p class="diagram-label">B · A common appraisal contributes to both</p>
+                    <div class="diagram-fork"><span class="diagram-node fork-source">Subjective appraisal / value</span><div class="fork-arrows" aria-hidden="true"><span>↙</span><span>↘</span></div><div class="fork-targets"><span class="diagram-node">Emotion</span><span class="diagram-node">Choice</span></div></div>
+                  </div>
+                  <div class="mechanism-row mechanism-learning">
+                    <p class="diagram-label">C · Emotion contributes to learning</p>
+                    <div class="diagram-chain"><span class="diagram-node">Emotion</span><span class="diagram-arrow" aria-hidden="true">→</span><span class="diagram-node">Value update</span><span class="diagram-arrow" aria-hidden="true">→</span><span class="diagram-node">Later choice</span></div>
+                  </div>
+                </figure>
+                <h4>5. Design discriminating tests</h4>
+                <p>Instead of asking only how to find more support, I can ask: <strong>under what conditions would competing theories make different predictions?</strong> I considered varying social context or inducing different emotional states while keeping monetary outcomes comparable. But equal monetary outcomes do not guarantee equal subjective reward prediction errors; expectations and appraisals also need to be measured or modelled.</p>
+                <ul>
+                  <li>Does the intervention change the intended process, and what else changes with it?</li>
+                  <li>What result would support one explanation while weakening another?</li>
+                  <li>What evidence would change my mind?</li>
+                </ul>
+                <p>A theory that can accommodate every outcome, without any result challenging it, provides little constraint on the next experiment.</p>
+                <h4>6. Find boundary conditions</h4>
+                <ul>
+                  <li>When, where, and why does an effect disappear or reverse?</li>
+                  <li>Does a similar behavioral signature play the same role in social and non-social tasks?</li>
+                  <li>Does a failure reflect an omitted moderator, a different process, or a change in measurement?</li>
+                </ul>
+                <p>A failed generalization is not automatically evidence against a mechanism. It may reveal where an explanation applies, or show that apparently comparable tasks were not comparable in the relevant way. Heterogeneity becomes informative when competing accounts predict it differently.</p>
+                <h4>7. Challenge generalizability</h4>
+                <ul>
+                  <li>Does the model explain people, or their adaptation to this particular task?</li>
+                  <li>Can it predict new tasks, populations, and contexts?</li>
+                  <li>What happens when stakes, relationships, or real-world consequences change?</li>
+                  <li>Which parameters or processes should remain stable across these changes?</li>
+                </ul>
+                <p>Imagining losing 100 yuan, losing it in an experimental game, and unexpectedly losing it in daily life may involve different expectations and interpretations. Rather than simply declaring laboratory tasks unrealistic, I want to ask which differences matter and how to test them.</p>
+                <h4>8. Reframe the research question</h4>
+                <p>Collecting more variables, increasing sample size, and improving prediction can all be valuable. But another question is worth asking: <strong>what assumptions have I inherited from the field without examining them?</strong></p>
+                <p>My initial question concerned how to separate reward and emotion prediction errors. A broader question emerged: what computational representation is appropriate if emotional reports depend on context, interpretation, and possibly the reporting procedure? This does not establish that the existing construct is wrong. It makes its adequacy a question to investigate rather than an assumption to inherit.</p>
+                <h3>3. Three thinking moves</h3>
+                <p><strong>Decompose.</strong> Separate the theoretical construct, operationalization, measurement, observed data, model assumptions, and inference. Locate the link that most needs testing rather than treating a concept as self-evident.</p>
+                <p><strong>Contrast.</strong> Construct alternative explanations and identify where their predictions conflict. Move from confirmation toward model discrimination.</p>
+                <p><strong>Reconstruct.</strong> If an account cannot explain boundary conditions, measurement differences, or cross-task behavior, consider whether a different representation or mechanism is needed, rather than automatically adding another control variable.</p>
+                <figure class="research-diagram thinking-cycle">
+                  <figcaption>Three thinking moves, connected by an empirical test</figcaption>
+                  <ol class="thinking-path">
+                    <li><strong>Decompose</strong><span>Separate the claim, measure, and assumptions.</span></li>
+                    <li><strong>Contrast</strong><span>Find where candidate explanations disagree.</span></li>
+                    <li class="thinking-test"><strong>Test</strong><span>Collect evidence that can distinguish them.</span></li>
+                    <li><strong>Reconstruct</strong><span>Revise the explanation in light of the result.</span></li>
+                  </ol>
+                  <p class="cycle-return">↶ Return to the assumptions with a more precise question.</p>
+                </figure>
+                <p>Each cycle should make the explanation more explicit, its predictions more constrained, and its scope clearer.</p>
+                <h3>4. Depth is not constant negation</h3>
+                <p>Critical thinking does not mean assuming every paper is flawed or demanding that one study solve measurement, causality, mechanism, and generalization at once. Every experiment simplifies; every measure has limits. A limitation does not automatically invalidate a result.</p>
+                <p>A productive critique should meet three standards:</p>
+                <ul>
+                  <li><strong>Specificity:</strong> Identify the assumption at issue and explain why it matters for the conclusion.</li>
+                  <li><strong>Discriminability:</strong> Offer distinguishable accounts, rather than vaguely invoking “other factors.”</li>
+                  <li><strong>Scientific productivity:</strong> Turn the concern into a prediction, experiment, model comparison, or theoretical improvement.</li>
+                </ul>
+                <p>“Self-report is unreliable” is too broad to do much work. A more useful hypothesis is that repeated emotion reporting changes attention or valuation, altering the relationship between emotion prediction errors and choice. Random assignment to frequent-report and minimal-report conditions could test whether the reporting procedure affects behavior. Additional controls would be needed to distinguish attention, time spent deliberating, and other task demands. These are proposed tests, not experiments I have conducted.</p>
+                <h3>5. What new knowledge becomes possible?</h3>
+                <p>One further question connects this exercise to my interest in computable, cumulative cognitive science: <strong>what new knowledge becomes possible if I connect evidence previously studied in isolation?</strong></p>
+                <ul>
+                  <li>Are different terms describing the same mechanism?</li>
+                  <li>Do similar effects in different tasks arise from different processes?</li>
+                  <li>Which theories explain several tasks, and which only explain a narrow setting?</li>
+                  <li>Could heterogeneity previously treated as noise reveal a theoretical boundary?</li>
+                  <li>Could comparing studies distinguish explanations that a single experiment leaves unresolved?</li>
+                </ul>
+                <p>Connecting studies is not itself a guarantee of identifying a mechanism. It matters when those connections make a scientific question more testable and help select an informative next experiment.</p>
+                <p>My takeaway is not simply to ask whether a theory explains observed results. I also need to ask why, what else could explain them, when it would fail, and what evidence would require a different understanding. And if the explanation is insufficient, can I propose a better one and design a test that could genuinely prove it wrong?</p>
+              </div>
+              <div id="research-questions-zh" class="blog-essay" data-post-language="zh" lang="zh-CN" hidden>
+                <p>读一篇论文时，我最初的目标往往很朴素：弄清楚作者做了什么，发现了什么，以及这个发现为什么重要。最近一次关于情绪与社会决策的讨论，却让我走得比预想中更远。讨论结束时，我关心的已经不只是如何理解一个解释，而是怎样把它和其他解释区分开，以及我是否需要重新定义问题。</p>
+                <h3>一、问题是怎样逐步深入的？</h3>
+                <p>起点是 Joseph Heffner、Jae-Young Son 和 Oriel FeldmanHall 的论文 <a href="https://doi.org/10.1038/s41562-021-01213-6"><em>Emotion prediction errors guide socially adaptive behaviour</em></a>。情绪预测误差指预期情绪与随后报告的情绪之间的差异。论文将其与奖励预测误差对社会选择的预测关系作比较，并用效价与唤醒度表示参与者报告的情绪。</p>
+                <p>我的提问逐渐发生了变化：</p>
+                <ol>
+                  <li><strong>理解发现：</strong>作者发现了什么？如何比较情绪预测误差与奖励预测误差？</li>
+                  <li><strong>追问操作化：</strong>用效价与唤醒度表示情绪，捕捉到了什么，又遗漏了什么？</li>
+                  <li><strong>质疑测量：</strong>同一报告值在不同人之间是否等价？询问情绪会不会改变情绪？</li>
+                  <li><strong>构造替代解释：</strong>情绪报告与选择，会不会都受到主观评价的影响，而不只是情绪导致选择？</li>
+                  <li><strong>考虑因果识别：</strong>怎样的干预能够区分这些解释？</li>
+                  <li><strong>寻找边界：</strong>这种表示或关系，在什么条件下不再充分？</li>
+                  <li><strong>检验泛化：</strong>想象损失、实验中损失，与现实中意外损失，有哪些重要区别？</li>
+                  <li><strong>重新定义问题：</strong>我是否不仅要问情绪预测误差能否预测选择，还要问情绪表征如何产生、被测量，并参与决策？</li>
+                </ol>
+                <p>一开始，我在问作者的框架内部如何运作；后来，我开始问这个框架为什么应当成立，以及是否存在更好的框架。以下是讨论产生的研究问题，不是已经得到验证的发现，也不是说原论文忽略了这些问题。作者本身也保留了奖励与情绪如何整合成共同价值信号的问题。</p>
+                <h3>二、可以反复使用的八层提问</h3>
+                <p>这些层次不必按固定顺序发生。每一层都帮助我检查科学主张与证据之间的一种联系。</p>
+                <h4>1. 明确主张：究竟发现了什么？</h4>
+                <ul>
+                  <li>结论是描述性的、预测性的，还是因果性的？</li>
+                  <li>研究真正证明了什么？哪些部分只是进一步的推断？</li>
+                  <li>如果写成一个准确、可检验的命题，它应该是什么？</li>
+                </ul>
+                <p>“情绪相关变量预测惩罚”本身不等于“它导致惩罚”，更不等于“它识别了一个独立的认知机制”。把这些主张分开，可以避免不知不觉地把预测能力变成比证据更强的机制解释。</p>
+                <h4>2. 追问构念：研究的东西究竟是什么？</h4>
+                <ul>
+                  <li>这个概念指什么？定义包含了哪些现象，又排除了哪些？</li>
+                  <li>当前的表示方式预设了什么？</li>
+                  <li>如果换一种表示，是否可能得到更好的行为解释？</li>
+                </ul>
+                <p>例如，愤怒与恐惧即使得到接近的效价与唤醒度评分，是否仍然可能产生不同选择？这里不把它当作已确立的结果，而是把它转化成问题：<strong>能够充分解释和预测行为的最小情绪表征，究竟是什么？</strong>这不再只是验证已有理论，而是在检验理论的基本表示方式。</p>
+                <h4>3. 追问测量：测到的是想研究的过程吗？</h4>
+                <ul>
+                  <li>观察到的是目标过程，还是一个不完美的代理变量？</li>
+                  <li>测量是否依赖语言、记忆、理解或判断？</li>
+                  <li>同一个测量值，在不同人、不同情境中是否具有相同意义？</li>
+                  <li>测量本身会不会改变被测量的过程？</li>
+                </ul>
+                <p>一个人报告愤怒，可能是在表达明确的体验，也可能是在推断自己应该愤怒；可能因为被问到，才开始注意一种模糊感受；也可能只是对“愤怒”这个词有不同的使用方式。这些是候选的报告过程，不是对具体参与者的判断。更深的问题因此成为：<strong>产生观测数据的测量过程是什么？</strong>我开始把测量本身也视为需要解释的认知过程。</p>
+                <h4>4. 构造竞争解释：什么还能产生同样的结果？</h4>
+                <p>当一个机制能够解释某种观察时，还应继续问：有没有完全不同的机制，也能产生相同的结果？“情绪影响选择”与“主观评价同时影响情绪报告和选择”，都可能产生情绪报告与选择之间的关联。</p>
+                <ul>
+                  <li>哪些模型在已有实验中给出的预测无法区分？</li>
+                  <li>是否有隐藏变量可以解释这种关系？</li>
+                  <li>更简单的模型能否解释这些发现？</li>
+                  <li>我识别了一个新过程，还是用新术语重新描述已有机制？</li>
+                </ul>
+                <p>思考的重心，从“找到一个解释”转向了“区分多种解释”。</p>
+                <figure class="research-diagram mechanism-comparison">
+                  <figcaption>不同解释可能产生相似的观察结果。以下是简化的候选机制，不是论文已经确立的结论。</figcaption>
+                  <div class="mechanism-row">
+                    <p class="diagram-label">A · 情绪影响当下的选择</p>
+                    <div class="diagram-chain"><span class="diagram-node">结果</span><span class="diagram-arrow" aria-hidden="true">→</span><span class="diagram-node">情绪</span><span class="diagram-arrow" aria-hidden="true">→</span><span class="diagram-node">选择</span></div>
+                  </div>
+                  <div class="mechanism-row mechanism-common">
+                    <p class="diagram-label">B · 共同的主观评价同时影响两者</p>
+                    <div class="diagram-fork"><span class="diagram-node fork-source">主观评价／价值</span><div class="fork-arrows" aria-hidden="true"><span>↙</span><span>↘</span></div><div class="fork-targets"><span class="diagram-node">情绪</span><span class="diagram-node">选择</span></div></div>
+                  </div>
+                  <div class="mechanism-row mechanism-learning">
+                    <p class="diagram-label">C · 情绪参与学习过程</p>
+                    <div class="diagram-chain"><span class="diagram-node">情绪</span><span class="diagram-arrow" aria-hidden="true">→</span><span class="diagram-node">价值更新</span><span class="diagram-arrow" aria-hidden="true">→</span><span class="diagram-node">后续选择</span></div>
+                  </div>
+                </figure>
+                <h4>5. 设计区分性检验：让理论产生不同预测</h4>
+                <p>问题不应只是“怎样找到更多支持这个理论的证据”，还应该是：<strong>在什么条件下，竞争理论会作出不同预测？</strong>讨论中，我考虑过在金钱结果尽量可比时改变社会情境，或诱发不同情绪。但相同的金钱结果，不保证相同的主观奖励预测误差；预期与评价也需要测量或建模。</p>
+                <ul>
+                  <li>操纵是否改变了目标过程？还有哪些过程同时被改变？</li>
+                  <li>哪种结果能支持一种解释，同时削弱另一种解释？</li>
+                  <li>什么证据会让我改变想法？</li>
+                </ul>
+                <p>如果一个理论可以容纳任何结果，却没有可能被证据挑战，那么它对下一次实验的约束就很有限。</p>
+                <h4>6. 寻找边界：什么时候消失或逆转？</h4>
+                <ul>
+                  <li>一个效应在何时、何地、为什么消失或逆转？</li>
+                  <li>相似的行为特征，在社会与非社会任务中是否扮演相同角色？</li>
+                  <li>失效来自遗漏的调节因素、不同的过程，还是测量的变化？</li>
+                </ul>
+                <p>泛化失败不自动意味着机制错误。它可能告诉我解释的适用范围，也可能说明原以为可比的任务，在关键层面并不可比。当不同解释对异质性给出不同预测时，异质性才会成为区分理论的证据，而不只是需要消除的噪声。</p>
+                <h4>7. 挑战泛化：解释的是任务，还是认知机制？</h4>
+                <ul>
+                  <li>模型解释的是人，还是参与者如何适应这个特定实验任务？</li>
+                  <li>能否预测未见过的任务、人群与情境？</li>
+                  <li>奖励规模、社会关系或现实后果改变后，解释还成立吗？</li>
+                  <li>哪些参数或过程应当跨情境保持稳定？</li>
+                </ul>
+                <p>想象丢失 100 元、在实验游戏中失去 100 元，以及现实中意外丢失 100 元，可能涉及不同的预期与理解。与其笼统地说实验室不真实，不如追问：哪些差异真正重要，我如何检验？</p>
+                <h4>8. 重构问题：最初问的问题是否合适？</h4>
+                <p>增加变量、扩大样本、使用更复杂的模型、提高预测准确率，都有价值。但还应该时不时问：<strong>哪些假设，是我从领域中继承下来，却没有认真检查过的？</strong></p>
+                <p>我最初问如何区分奖励与情绪预测误差，后来开始问：如果情绪报告依赖情境、解释，甚至报告程序，那么什么计算表征才合适？这并不证明现有构念错误，而是把它是否充分，从一个默认前提变成需要研究的问题。</p>
+                <h3>三、三个值得练习的思维动作</h3>
+                <p><strong>拆解（Decompose）。</strong>把结论拆成理论构念、操作化、测量、观测数据、模型假设与推断，找出其中最需要检验的联系，而不把概念当成不证自明的事实。</p>
+                <p><strong>比较（Contrast）。</strong>主动构造替代解释，寻找它们在什么条件下产生冲突预测，从寻求确认转向模型区分。</p>
+                <p><strong>重构（Reconstruct）。</strong>当解释无法处理边界条件、测量差异或跨任务行为时，考虑是否需要新的表征或机制，而不只是再增加一个控制变量。</p>
+                <figure class="research-diagram thinking-cycle">
+                  <figcaption>三个思维动作，通过经验检验连接成循环</figcaption>
+                  <ol class="thinking-path">
+                    <li><strong>拆解</strong><span>分清主张、测量与假设。</span></li>
+                    <li><strong>比较</strong><span>找到候选解释的分歧。</span></li>
+                    <li class="thinking-test"><strong>检验</strong><span>收集能区分解释的证据。</span></li>
+                    <li><strong>重构</strong><span>根据结果修正解释。</span></li>
+                  </ol>
+                  <p class="cycle-return">↶ 带着更明确的问题，重新检查假设。</p>
+                </figure>
+                <p>每一轮都应该让解释更明确、预测更有约束、适用范围更清楚。</p>
+                <h3>四、深刻不等于不断否定</h3>
+                <p>批判性思考，不是默认每项研究都有严重缺陷，也不是要求一篇论文同时解决测量、因果、机制与泛化的所有问题。任何实验都需要简化现实，任何测量都有局限。有局限，不自动意味着结论没有意义。</p>
+                <p>有建设性的批判，应当满足三个标准：</p>
+                <ul>
+                  <li><strong>具体性：</strong>明确指出哪个假设有问题，以及为什么影响当前结论。</li>
+                  <li><strong>可区分性：</strong>提出能够区分的解释，而不是笼统地说“可能还有其他因素”。</li>
+                  <li><strong>科学生产力：</strong>把质疑转化成新预测、实验、模型比较或理论改进。</li>
+                </ul>
+                <p>“自我报告不可靠”太笼统。更有用的假设是：反复报告情绪，可能改变注意或价值评价，从而改变情绪预测误差与选择的关系。随机设置频繁报告与较少报告条件，可以检验报告程序是否改变行为；之后还需通过控制，区分注意、思考时间和其他任务要求。这些是尚待开展的实验设想，不是我已经完成的研究。</p>
+                <h3>五、连接证据后，什么新知识成为可能？</h3>
+                <p>还有一个问题，将这次讨论与我对可计算、可累积认知科学的兴趣联系起来：<strong>如果把过去孤立研究的证据连接起来，哪些新知识才成为可能？</strong></p>
+                <ul>
+                  <li>不同术语是否描述着同一个机制？</li>
+                  <li>不同任务中的相似效应，是否来自不同过程？</li>
+                  <li>哪些理论可以解释多个任务，哪些只能解释狭窄情境？</li>
+                  <li>过去被当作噪声的异质性，是否揭示了理论边界？</li>
+                  <li>跨研究比较，能否区分单个实验无法区分的解释？</li>
+                </ul>
+                <p>连接研究本身不保证识别出机制。它的价值在于让科学问题更可检验，并帮助我选择下一步真正有信息量的实验。</p>
+                <p>对我而言，最重要的原则是：不要只问一个理论能否解释已有结果，还要问它为什么能解释、还有什么解释、何时会失败，以及什么证据会迫使我改变理解。最后再问：如果现有解释不够好，能否提出一个更好的解释，并设计出真正有可能证明它错误的实验？</p>
+              </div>
+            </div>
+          </details>
+        </article>
         <article class="blog-card">
           <details>
             <summary>
