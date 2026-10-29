@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Blog by Lan Pan." />
     <title>Blog | Lan Pan</title>
-    <link rel="stylesheet" href="styles.css?v=blog-diagrams-1" />
+    <link rel="stylesheet" href="styles.css?v=blog-newell-1" />
     <script src="script.js?v=blog-bilingual-1" defer></script>
   </head>
   <body>
@@ -25,6 +25,323 @@
     <main id="main" class="page-content">
       <h1 class="page-title">Blog</h1>
       <div class="blog-grid">
+        <article id="beyond-20-questions" class="blog-card blog-card-photo" lang="en" data-bilingual-post>
+          <details>
+            <summary>
+              <h2><span data-post-language="en" lang="en">Beyond 20 Questions: What Does It Mean for Cognitive Science to Accumulate Knowledge?</span><span data-post-language="zh" lang="zh-CN" hidden>超越二十个问题：什么才算认知科学真正的进步？</span></h2>
+              <time class="blog-entry-date" datetime="2026-10-29">2026-10-29</time>
+            </summary>
+            <div class="blog-body">
+              <div class="blog-language-controls">
+                <button class="blog-language-toggle" type="button" aria-label="Show Chinese version" aria-controls="beyond-20-en beyond-20-zh" hidden>中文</button>
+              </div>
+              <div id="beyond-20-en" class="blog-essay" data-post-language="en" lang="en">
+                <blockquote><p>“You can’t play 20 questions with Nature and win.” — Allen Newell (1973)</p></blockquote>
+                <p>Recently, while revisiting Allen Newell's classic argument, I found myself returning to a question that has motivated much of my research:</p>
+                <p><strong>As we publish more papers, discover more experimental effects, and collect more behavioral data, are we necessarily developing a deeper understanding of the human mind?</strong></p>
+                <p>In cognitive science, we often begin by identifying a phenomenon, designing an experiment, and testing whether an effect exists. Other researchers may then replicate the finding, investigate its boundary conditions, or propose alternative explanations.</p>
+                <p>Yet even if each study is carefully designed and statistically rigorous, it does not follow that these findings will eventually combine into a coherent theory of cognition.</p>
+                <p>We may know more and more about individual phenomena while still understanding little about how they relate to one another. We may develop increasingly sophisticated models without becoming much clearer about what those models actually explain.</p>
+                <p><strong>The accumulation of experimental findings is not necessarily the accumulation of scientific understanding.</strong></p>
+                <p>This is one reason I have been drawn to the idea of a <em>computable, cumulative cognitive science</em>. But I increasingly think that making scientific knowledge computable is only part of the challenge. We must also ask what kind of knowledge is worth accumulating, and what would demonstrate that our understanding has genuinely improved.</p>
+                <h2>1. From Experimental Effects to Complete Cognitive Processes</h2>
+                <p>Newell's first proposal was to develop <em>Complete Processing Models</em>: models capable of actually carrying out a task, rather than merely accounting for an isolated experimental effect.</p>
+                <p>This raises an important question about what we choose to measure.</p>
+                <p>Much of behavioral research focuses on observable outcomes, such as choices, accuracy, and response times. Yet identical outcomes may arise from very different cognitive processes.</p>
+                <p>Two people might choose the same option. One may have carefully compared the values of the alternatives, while the other may have relied on a simple heuristic. Their final choices alone may not distinguish these explanations.</p>
+                <p>This motivates my interest in process-related measurements, including think-aloud protocols, eye-tracking, mouse-tracking, and neural data.</p>
+                <p>These measurements may provide additional constraints on cognitive models. They can tell us something about the information people attend to, the strategies they report, the way their actions unfold, and the neural activity associated with their decisions.</p>
+                <p>But an important distinction remains:</p>
+                <p><strong>Does observing a process mean that we have identified the process?</strong></p>
+                <p>Not necessarily.</p>
+                <p>Eye movements are not equivalent to attention itself. Verbal reports do not provide unrestricted access to internal computations. Neural correlates of a decision variable do not uniquely establish how that variable is represented or used.</p>
+                <p>Even a model that jointly predicts choices, response times, and eye movements may be observationally compatible with multiple underlying mechanisms.</p>
+                <p>The goal, therefore, should not simply be to collect more modalities of data.</p>
+                <p>Instead, I want to understand how different measurements can jointly constrain explicit computational models, and how experiments can distinguish competing explanations of the processes that generate behavior.</p>
+                <p>A useful cognitive model should not only reproduce what people do. It should make testable predictions about how their behavior and processing change when the task changes.</p>
+                <h2>2. From Isolated Experiments to Complete Cognitive Activities</h2>
+                <p>Newell's second proposal was to <em>Analyze a Complex Task</em>.</p>
+                <p>Learning provides a useful example.</p>
+                <p>We can study reinforcement learning, category learning, causal learning, and transfer learning as separate experimental domains. But simply placing more learning tasks side by side does not necessarily solve the problem of fragmentation.</p>
+                <p>An alternative is to treat learning as a complex cognitive activity that must be explained as a whole.</p>
+                <p>When people encounter an unfamiliar environment, they may need to understand its rules, construct a representation of the problem, explore possible actions, update their beliefs, adapt their strategies, and eventually apply what they have learned to new situations.</p>
+                <p>These processes interact.</p>
+                <p>Exploration depends on what a learner currently knows. New information changes subsequent decisions. How the task is represented may determine which features are attended to and which experiences are generalized.</p>
+                <p>Different experiments can isolate parts of this process. But the larger question is whether their findings can jointly constrain a model of the complete activity.</p>
+                <p><strong>Can a series of experiments contribute to one explanation, rather than merely producing a series of conclusions?</strong></p>
+                <p>A compelling aspect of Newell's argument is that experiments should impose constraints on one another through a shared model.</p>
+                <p>For example, one study might independently estimate a particular processing parameter, while another tests the predictions that follow from it under new conditions.</p>
+                <p>In this way, evidence accumulates not merely because another result has been reported, but because the space of plausible explanations becomes more constrained.</p>
+                <p>I increasingly think that the scientific value of an experiment depends not only on what it reveals, but also on which explanations it strengthens, weakens, or rules out.</p>
+                <h2>3. One Computational System for Many Tasks</h2>
+                <p>Newell's third proposal, <em>One Program for Many Tasks</em>, is particularly interesting in light of modern artificial intelligence.</p>
+                <p>Large language models can carry out many different tasks when given appropriate instructions. They offer a common computational framework for investigating relationships across tasks that were traditionally studied separately.</p>
+                <p>This possibility helped motivate my interest in cross-task transfer.</p>
+                <p>Suppose a model trained to predict human behavior on one task also improves predictions on another. Such transfer may reveal some shared computational structure between the two tasks.</p>
+                <p>But we need to be careful about what this result establishes.</p>
+                <p><strong>One model performing many tasks is not the same as one model explaining human cognition across tasks.</strong></p>
+                <p>A language model may solve different tasks using task-specific knowledge, linguistic shortcuts, or strategies unlike those used by humans.</p>
+                <p>Likewise, transfer between behavioral tasks may reflect similarities in stimulus structure, response mappings, statistical regularities, or representation choices rather than a shared cognitive mechanism.</p>
+                <p>For me, cross-task transfer is therefore most interesting as a way to discover relationships that require explanation.</p>
+                <p>If two tasks show strong transfer, what exactly do they share?</p>
+                <p>Is the relationship driven by their superficial descriptions, their stimulus-response mappings, their action-outcome contingencies, or some more general decision process?</p>
+                <p>What happens if we preserve the cover story but change the underlying contingencies? What happens if we alter the story while preserving the task structure?</p>
+                <p>These questions turn task relationships into experimentally testable hypotheses.</p>
+                <p><strong>Transfer becomes more scientifically informative when it generates predictions that distinguish competing explanations of why tasks are related.</strong></p>
+                <h2>4. Computable Does Not Mean Cumulative</h2>
+                <p>One distinction has become increasingly important to me: making scientific knowledge computable is not the same as making science cumulative.</p>
+                <p>I find it useful to separate four goals.</p>
+                <p><strong>Computability</strong> allows us to represent and computationally compare scientific objects, such as tasks, constructs, hypotheses, manipulations, and measurements.</p>
+                <p><strong>Comparability</strong> allows us to identify how studies resemble or differ from one another, and whether their findings bear on related theoretical questions.</p>
+                <p><strong>Cumulativity</strong> requires new evidence to constrain, revise, or extend existing explanations.</p>
+                <p><strong>Explanation</strong> requires more than describing an effect or predicting an outcome. It involves explicit, testable claims about the processes that generate the observations.</p>
+                <p>These goals can support one another, but none automatically guarantees the others.</p>
+                <p>For example, we might create a common representation for thousands of psychological experiments. Yet structural similarity between experiments would not by itself establish that they recruit the same cognitive mechanism.</p>
+                <p>Conversely, studies using different paradigms or terminology may share important computational structure.</p>
+                <p>This connects directly to the jingle-jangle problem in psychological science: similar names do not guarantee identical constructs, and different names do not guarantee distinct constructs.</p>
+                <p>The problem becomes especially interesting when considering congruency effects across Stroop, Flanker, and Simon tasks.</p>
+                <p>These tasks may produce apparently similar effects, but does that mean they reflect the same cognitive control mechanism?</p>
+                <p>If not, what distinguishes the mechanisms? If they share some processes, at what level of computational description does that similarity occur?</p>
+                <p>I see experimental representations and large-scale evidence integration as tools for investigating such questions.</p>
+                <p>But a representation cannot establish its own theoretical validity. A computational system may reveal patterns and disagreements, yet additional reasoning and experiments are needed to determine what those patterns mean.</p>
+                <p><strong>Making science computable is a means toward scientific understanding, not scientific understanding itself.</strong></p>
+                <h2>5. Must Cumulative Science Be Unified?</h2>
+                <p>Perhaps the question I find most interesting is this:</p>
+                <p><strong>Can scientific knowledge be cumulative without being unified?</strong></p>
+                <p>What if human cognition cannot be explained by one simple, general-purpose mechanism?</p>
+                <p>People may use different strategies in different situations. They may shift between processes depending on goals, prior experience, cognitive resources, and environmental demands.</p>
+                <p>If so, scientific progress need not consist solely of discovering universal mechanisms.</p>
+                <p>It may also involve discovering the conditions under which mechanisms operate, interact, change, or fail.</p>
+                <p>Consider two congruency tasks that produce similar behavioral patterns under some conditions but systematically different patterns under others.</p>
+                <p>Such differences need not represent a failure of theoretical integration.</p>
+                <p>They may instead reveal which aspects of task structure matter, which processes are context-dependent, and what a more informative theory must explain.</p>
+                <p>The key question is whether we can account for those boundaries and predict behavior under conditions that have not yet been observed.</p>
+                <p><strong>A theory becomes more informative not only by explaining what is shared, but also by explaining why and when things differ.</strong></p>
+                <p>I therefore do not think the goal of cumulative cognitive science should be unification at any cost.</p>
+                <p>A valuable theory should make explicit where its predictions hold, where they fail, and how new evidence can lead to principled revisions.</p>
+                <h2>6. What Does AI Actually Change?</h2>
+                <p>Recent advances in AI make it possible to study cognitive science at scales and levels of complexity that were previously difficult to manage.</p>
+                <p>Language models can extract experimental structures from scientific papers, compare claims across studies, and help analyze large collections of behavioral data.</p>
+                <p>They can also serve as predictive models or as computational systems whose internal representations and behavior can be investigated.</p>
+                <p>But I think it is important to distinguish three roles.</p>
+                <p>First, <strong>AI as a scientific instrument</strong> can help organize and compare evidence.</p>
+                <p>Second, <strong>AI as a predictive model</strong> can learn patterns from behavioral data and generate predictions about new tasks or conditions.</p>
+                <p>Third, <strong>AI as a candidate mechanistic model</strong> can provide a computational system in which internal representations, processing, and interventions can be studied.</p>
+                <p>These roles involve different scientific claims and therefore require different forms of validation.</p>
+                <p>A system that organizes literature does not necessarily determine whether a theory is correct.</p>
+                <p>A model that predicts human behavior does not necessarily use human-like mechanisms.</p>
+                <p>And identifying an interpretable feature inside a model does not establish that it causally controls the behavior we associate with it.</p>
+                <p>I am interested in AI not merely because it can perform increasingly complex tasks, but because it may create new opportunities to formulate and test explanations of cognition.</p>
+                <p><strong>The most interesting question is not what AI can do, but what AI allows us to discover about cognition that we could not establish before.</strong></p>
+                <p>At the same time, I want to resist the temptation to introduce complicated methods simply because they are available.</p>
+                <p>A simple model or a carefully designed experiment may sometimes provide a more decisive scientific test than a much larger computational system.</p>
+                <p>Methodological sophistication is valuable only insofar as it contributes to understanding.</p>
+                <h2>7. Revisiting My Own Research</h2>
+                <p>Looking across my projects, I can see several related scientific questions.</p>
+                <p>Hypothesis-literature matching and experimental representations ask how we can determine whether different studies are actually testing the same claim.</p>
+                <p>Behavioral-Computational Task Space asks whether relationships between tasks can be measured through behavioral transfer and predicted from their structure.</p>
+                <p>Think-aloud model discovery asks whether process-related measurements can distinguish models that choices alone cannot adequately separate.</p>
+                <p>Cross-experiment analyses ask why behavioral effects change across experimental conditions and whether these changes reveal the limits of existing explanations.</p>
+                <p>My work on LLM exploration and internal mechanisms raises another question: when a model represents a theoretically meaningful variable, does that representation actually influence its decisions?</p>
+                <p>These are not identical problems, and I do not think they need to be forced into one methodological framework.</p>
+                <p>But they connect to a common scientific ambition:</p>
+                <p><strong>How can existing evidence constrain, challenge, and improve our explanations of the mind?</strong></p>
+                <p>I increasingly think that my goal is not simply to build systems that connect papers, tasks, hypotheses, and datasets.</p>
+                <p>It is to help develop a research process in which existing evidence informs new predictions, unexpected findings prompt theoretical revisions, and unresolved disagreements guide the design of informative experiments.</p>
+                <p>This also changes how I want to think about the tools I develop.</p>
+                <p>Representations, computational models, AI agents, and large-scale datasets are not the ultimate scientific objective.</p>
+                <p>They are valuable when they help us formulate better questions, distinguish explanations, and learn something new about human cognition.</p>
+                <h2>8. Questions I Want to Keep Asking</h2>
+                <p>As I continue reading, designing experiments, and building models, I want to return to a small set of questions.</p>
+                <ol>
+                <li><strong>What am I trying to explain?</strong> Is it an isolated experimental effect, or a more general cognitive capacity?</li>
+                <li><strong>What would count as an explanation?</strong> Does my model merely fit existing results, or does it specify a plausible process that generates them?</li>
+                <li><strong>What is actually shared across studies?</strong> Terminology, experimental structure, behavioral patterns, or an underlying computation?</li>
+                <li><strong>What alternative explanations remain possible?</strong> Could different mechanisms produce the same observations?</li>
+                <li><strong>What observation would change my mind?</strong> What result would force me to revise or abandon my preferred explanation?</li>
+                <li><strong>What new prediction follows?</strong> Can my theory predict behavior in a task or condition that has not yet been observed?</li>
+                <li><strong>Does the added complexity buy new scientific understanding?</strong> What indispensable information does a new representation, measurement, or model contribute?</li>
+                </ol>
+                <p>The final question is particularly important to me.</p>
+                <p>It is easy to confuse the growing complexity of our methods with scientific progress. But a more elaborate representation or a more powerful AI system does not necessarily provide a deeper explanation.</p>
+                <p>I want to keep asking what a new tool makes possible that could not previously be tested, distinguished, or understood.</p>
+                <h2>Conclusion: From More Findings to Better Explanations</h2>
+                <p>More than half a century after Newell's argument, cognitive science has access to extraordinary quantities of data, computational power, and new AI methods.</p>
+                <p>Yet better technology does not automatically produce better theories.</p>
+                <p>I hope to contribute to a cognitive science that not only discovers new phenomena but also explains relationships among existing findings; that not only predicts observed behavior but also identifies when and why predictions fail; and that uses new evidence to revise its own theoretical commitments.</p>
+                <p>Perhaps the goal is not to eventually discover one theory that answers every question about the mind.</p>
+                <p>Perhaps it is to develop a scientific process in which each discovery can meaningfully change what we think we know.</p>
+                <p><strong>I want to build a cognitive science in which evidence does not merely accumulate, but explanations become more precise, more constrained, and more open to revision.</strong></p>
+                <p>Because scientific progress is not simply knowing more.</p>
+                <p><strong>It is understanding better what we know, why we believe it, where it may fail, and what we should test next.</strong></p>
+                <hr />
+                <h2>Selected Readings</h2>
+                <p>These papers have informed my thinking about cumulative knowledge, cognitive explanation, and computational modeling.</p>
+                <ol>
+                  <li><strong>Newell, A. (1973).</strong> <em>You Can't Play 20 Questions with Nature and Win.</em> <a href="https://gwern.net/doc/psychology/neuroscience/1972-newell.pdf">Read the paper</a></li>
+                  <li><strong>van Rooij, I., &amp; Baggio, G. (2021).</strong> <em>Theory Before the Test: How to Build High-Verisimilitude Explanatory Theories in Psychological Science.</em> <a href="https://doi.org/10.1177/1745691620970604">DOI</a></li>
+                  <li><strong>Guest, O., &amp; Martin, A. E. (2021).</strong> <em>How Computational Modeling Can Force Theory Building in Psychological Science.</em> <a href="https://doi.org/10.1177/1745691620970585">DOI</a></li>
+                  <li><strong>Poldrack, R. A., et al. (2011).</strong> <em>The Cognitive Atlas: Toward a Knowledge Foundation for Cognitive Neuroscience.</em> <a href="https://doi.org/10.3389/fninf.2011.00017">DOI</a></li>
+                  <li><strong>Roberts, S., &amp; Pashler, H. (2000).</strong> <em>How Persuasive Is a Good Fit? A Comment on Theory Testing.</em> <a href="https://doi.org/10.1037/0033-295X.107.2.358">DOI</a></li>
+                  <li><strong>Almaatouq, A., et al. (2024).</strong> <em>Beyond Playing 20 Questions with Nature: Integrative Experiment Design in the Social and Behavioral Sciences.</em> <a href="https://doi.org/10.1017/S0140525X22002874">DOI</a></li>
+                </ol>
+              </div>
+              <div id="beyond-20-zh" class="blog-essay" data-post-language="zh" lang="zh-CN" hidden>
+                <blockquote><p>“You can’t play 20 questions with Nature and win.” — Allen Newell (1973)</p></blockquote>
+                <p>最近重新思考 Allen Newell 在 1973 年提出的这句话时，我发现它触及了一个长期困扰我的问题：</p>
+                <p><strong>当我们不断发表新的论文、发现新的实验效应、收集更多的行为数据时，我们是否真的在不断加深对人类心智的理解？</strong></p>
+                <p>在认知科学中，我们可以通过精心设计的实验发现一个现象，并用统计模型验证它的存在。之后，其他研究者可能在不同任务中重复这个实验，或提出新的解释。</p>
+                <p>但即使每一个实验都很严谨，也不意味着这些发现最终能够组合成一个连贯的认知理论。</p>
+                <p>我们可能知道越来越多的现象，却仍然不知道这些现象之间的关系；我们可能发展出越来越复杂的计算模型，却仍然不清楚它们究竟解释了什么。</p>
+                <p><strong>The accumulation of experimental findings is not necessarily the accumulation of scientific understanding.</strong></p>
+                <p>实验发现的积累，并不必然意味着科学理解的深化。</p>
+                <p>这也是我一直对 <em>computable, cumulative cognitive science</em> 感兴趣的原因。但随着思考的深入，我逐渐意识到：我们不仅需要让科学知识变得可以计算，还需要更认真地回答，什么样的知识值得被积累，以及怎样才能证明我们的理解真的有所进步。</p>
+                <h2>1. 从实验效应走向完整的认知过程</h2>
+                <p>Newell 提出的第一个方向是 <em>Complete Processing Models</em>：我们需要建立能够真正执行任务的完整认知过程模型，而不仅是能够解释某个局部效应的模型。</p>
+                <p>这让我想到，过去许多研究主要关注可观测的行为结果，例如最终选择、正确率和反应时间。</p>
+                <p>但相同的行为可能来自完全不同的认知过程。</p>
+                <p>两个人选择同一个选项，一个可能经过了复杂的价值计算，另一个可能使用了简单的启发式策略。仅从最终选择来看，我们很难区分他们。</p>
+                <p>因此，我认为研究不能只局限于行为结果，还需要利用其他过程数据来约束模型，例如：</p>
+                <ul>
+                <li><strong>Think-aloud</strong>：被试如何描述自己的思考和策略；</li>
+                <li><strong>Eye-tracking</strong>：注意力如何分配，信息以什么顺序被获取；</li>
+                <li><strong>Mouse-tracking</strong>：决策过程中的行动轨迹如何变化；</li>
+                <li><strong>Neural measurements</strong>：认知活动与神经计算之间存在什么联系。</li>
+                </ul>
+                <p>然而，一个更加根本的问题随之出现：</p>
+                <p><strong>Does observing a process mean that we have identified the process?</strong></p>
+                <p>观察到了与认知过程相关的数据，是否意味着我们已经识别了真实的认知机制？</p>
+                <p>答案并不一定。</p>
+                <p>眼动不等于注意力的全部，语言报告不等于内部计算过程，神经活动与某个心理变量相关，也不意味着它唯一地表征这个变量。</p>
+                <p>即使模型能够同时预测选择、反应时间和眼动轨迹，也可能有多个不同的计算过程产生类似的观测结果。</p>
+                <p>因此，增加 process data 并不是终点。</p>
+                <p>真正重要的是：<strong>我们能否建立一个具有明确内部机制的模型，使不同测量共同约束它，并通过新实验区分彼此竞争的解释？</strong></p>
+                <p>一个好的认知过程模型，不仅应该能够重现已知行为，还应该解释行为是如何产生的，预测过程如何随任务条件改变，并对干预产生可检验的预测。</p>
+                <p>这比单纯提高模型的拟合程度更具有科学意义。</p>
+                <h2>2. 从孤立实验走向对完整认知活动的理解</h2>
+                <p>Newell 的第二个方向是 <em>Analyze a Complex Task</em>。</p>
+                <p>这里让我感兴趣的一个例子是学习。</p>
+                <p>我们可以研究 reinforcement learning、category learning、causal learning 或 transfer learning。但如果只是把多个学习任务放在一起，并分别分析它们的结果，我们可能仍然在重复过去的研究方式。</p>
+                <p>另一个方向是：把学习视为一个需要完整解释的认知活动。</p>
+                <p>一个人在新环境中学习，可能需要理解任务规则、建立问题表征、主动探索环境、更新知识、调整策略，并将学到的内容迁移到新的情境。</p>
+                <p>这些过程并不是相互独立的。</p>
+                <p>探索受到当前知识状态的影响，学习又改变未来的探索策略；任务表征决定哪些信息被认为重要，而过去的经验可能影响人如何理解新的任务。</p>
+                <p>我们可以设计不同的实验分别研究这些过程，但最终应该尝试回答：</p>
+                <p><strong>这些实验能否共同约束一个完整的学习模型，而不仅仅是产生若干独立的结论？</strong></p>
+                <p>Newell 的一个重要启示是，不同实验之间应当存在理论上的依赖关系。</p>
+                <p>一个实验可以帮助估计模型中的某种过程参数，另一个实验可以检验这些参数在新条件下的预测。这样，新的发现就不只是加入文献，而是对已有理论施加新的约束。</p>
+                <p>我越来越觉得，<strong>一个实验的科学价值，不仅取决于它发现了什么，还取决于它使哪些解释变得更可信、哪些解释不再成立。</strong></p>
+                <h2>3. 一个计算系统能否解释多种任务？</h2>
+                <p>Newell 的第三个方向是 <em>One Program for Many Tasks</em>：能否构建同一个计算系统，让它接受不同任务的指令，并完成这些任务？</p>
+                <p>在今天，这个设想显得尤其有趣。</p>
+                <p>大型语言模型可以通过不同的 prompts 执行大量任务。这使我们第一次有机会，在一个相对统一的计算框架中，系统地考察不同认知任务之间的关系。</p>
+                <p>这也是我研究 cross-task transfer 的初衷之一。</p>
+                <p>如果我们在一个任务上学习到的行为模式能够改善对另一任务中人类行为的预测，那么这两个任务之间可能存在某些共享的计算结构。</p>
+                <p>但我也意识到，这里存在一个必须谨慎处理的区别：</p>
+                <p><strong>One model performing many tasks is not the same as one model explaining human cognition across tasks.</strong></p>
+                <p>同一个模型能够完成多个任务，并不意味着它使用了同一个认知机制，更不意味着这个机制与人类相同。</p>
+                <p>跨任务迁移也可能来自相似的刺激结构、行为统计规律、选项编码方式，甚至模型训练过程中形成的某些偏差。</p>
+                <p>因此，cross-task transfer 最有价值的地方，也许不是直接证明两个任务共享某种认知机制，而是帮助我们发现有待解释的任务关系。</p>
+                <p>例如，如果任务 A 和任务 B 之间存在很强的 transfer，我们可以进一步问：</p>
+                <p>它们究竟共享了什么？</p>
+                <p>是任务的表面描述、刺激—反应映射、行动与结果之间的关系，还是某种更一般的决策计算？</p>
+                <p>如果我们保持表面描述不变，却改变行动与结果的关系，transfer 会怎样变化？</p>
+                <p>如果我们改变表面描述，却保留底层任务结构，又会怎样？</p>
+                <p><strong>只有当关于任务关系的解释能够产生新的、可区分的预测时，transfer 才有机会从一种经验性度量，成为研究认知机制的科学工具。</strong></p>
+                <h2>4. Computable 不等于 Cumulative</h2>
+                <p>随着研究的推进，我越来越需要区分几个容易被混为一谈的目标。</p>
+                <p><strong>Computable</strong> 意味着我们能够明确表示并计算比较某些科学对象，例如任务、构念、假设、实验条件和行为模式。</p>
+                <p><strong>Comparable</strong> 意味着我们能够判断不同研究之间有哪些共同点和差异，以及它们是否在检验可以联系起来的问题。</p>
+                <p><strong>Cumulative</strong> 意味着新的证据可以真正约束、修正或扩展已有的解释，而不只是增加新的记录。</p>
+                <p><strong>Explanatory</strong> 意味着理论不只描述或预测某种行为，还对产生行为的机制提出可检验的说明。</p>
+                <p>这些目标相互关联，却并不等价。</p>
+                <p>例如，我们可能建立一个非常精细的实验 representation，让数千篇论文中的任务结构都可以被统一编码。</p>
+                <p>但即使两个实验具有相同的结构，也不代表它们涉及同一种认知机制。</p>
+                <p>同样，两个实验使用完全不同的术语，也可能研究的是相似的计算过程。</p>
+                <p>这与认知科学中的 <em>jingle-jangle problem</em> 密切相关：相同的名称未必指向相同的构念，不同的名称也未必代表不同的构念。</p>
+                <p>最近在思考 congruency effects 时，我也不断遇到这个问题。</p>
+                <p>Stroop、Flanker 和 Simon tasks 都可以表现出 congruency effects，但这些效应到底在多大程度上反映共同的 cognitive control mechanism？</p>
+                <p>如果它们实际上依赖不同机制，我们应该如何区分？</p>
+                <p>如果它们确实具有共享成分，我们又能否明确这种共享发生在什么计算层面？</p>
+                <p>我认为，任务表示和大规模证据整合可以帮助我们更系统地提出这些问题，但它们不能自动给出答案。</p>
+                <p><strong>Making science computable is a means toward scientific understanding, not scientific understanding itself.</strong></p>
+                <p>科学知识的可计算化，是通往科学理解的一种手段，而不是科学理解本身。</p>
+                <h2>5. 科学进步一定意味着理论的统一吗？</h2>
+                <p>这是我目前最想进一步思考的问题。</p>
+                <p><strong>Can scientific knowledge be cumulative without being unified?</strong></p>
+                <p>如果我们始终无法建立一个能够解释所有认知任务的统一模型，是否意味着认知科学无法真正积累知识？</p>
+                <p>我越来越觉得，答案可能是否定的。</p>
+                <p>我们不一定需要一个普遍适用于所有任务的单一机制。</p>
+                <p>人类可能在不同情境中使用不同的策略，也可能根据目标、经验、认知资源和环境条件，在多个机制之间动态切换。</p>
+                <p>如果是这样，那么科学进步可能不仅体现为发现共同规律，也体现为更加准确地知道规律何时成立、何时失效，以及为什么会发生这种变化。</p>
+                <p>例如，如果我们发现两个 congruency tasks 在某些条件下表现出相似行为，却在另一些条件下出现系统性的差异，这未必是理论整合的失败。</p>
+                <p>恰恰相反，这些差异可能揭示了原先被忽略的任务条件和认知过程。</p>
+                <p>真正重要的是，我们能否解释这些边界，并预测尚未观测过的情境。</p>
+                <p><strong>A theory becomes more informative not only by explaining what is shared, but also by explaining why and when things differ.</strong></p>
+                <p>一个理论的价值，不仅在于解释不同现象的共同点，也在于解释它们为什么、以及在什么条件下表现出差异。</p>
+                <p>因此，我希望追求的不是不惜一切代价的理论统一，而是能够不断修正、明确适用边界，并生成新预测的认知解释。</p>
+                <h2>6. AI 给科学带来了什么新的可能性？</h2>
+                <p>AI 的快速发展使得许多过去难以实现的研究方式变得可行。</p>
+                <p>我们现在可以利用语言模型分析大量科学文献，提取假设和实验结构；可以将不同数据集放进共同的计算框架；也可以训练或分析能够执行多种任务的模型。</p>
+                <p>但 AI 在其中至少承担着三种不同角色。</p>
+                <p>第一，<strong>AI as a scientific instrument</strong>。</p>
+                <p>它帮助我们整理、比较和检索已有知识，让过去分散在不同论文中的证据更容易被联系起来。</p>
+                <p>第二，<strong>AI as a predictive model</strong>。</p>
+                <p>它可以从大量行为数据中学习统计规律，并尝试预测新的任务或实验条件下的行为。</p>
+                <p>第三，<strong>AI as a candidate mechanistic model</strong>。</p>
+                <p>我们可以研究 AI 模型内部的信息处理过程，探索某些表示是否真正影响行为生成。</p>
+                <p>然而，这三种角色需要不同的证据标准。</p>
+                <p>一个能很好地整理文献的系统，不一定能够判断理论的真实性。</p>
+                <p>一个能准确预测人类选择的模型，不一定使用了人类的认知机制。</p>
+                <p>一个内部具有某种可解释特征的模型，也不意味着该特征一定在决策中发挥了我们所假设的因果作用。</p>
+                <p>这也是为什么我认为，AI 的价值不应该仅仅用模型规模、预测能力或自动化程度衡量。</p>
+                <p><strong>The most interesting question is not what AI can do, but what AI allows us to discover about cognition that we could not establish before.</strong></p>
+                <p>最有意思的问题，不是 AI 能够完成多少事情，而是它能帮助我们建立哪些过去尚无法建立的关于认知的认识。</p>
+                <p>而且，并不是每个研究问题都需要复杂的 AI 系统。有时，一个简单的模型、一个清晰的理论对比，或者一个精心设计的小实验，可能更接近我们真正希望得到的答案。</p>
+                <h2>7. 回过头来看我的研究</h2>
+                <p>当我重新审视自己正在做的研究时，我逐渐发现它们之间存在一条共同的科学主线。</p>
+                <p>Hypothesis-literature matching 和 experimental representations 关心的是：我们如何知道不同论文和实验是否实际上在研究相同的问题？</p>
+                <p>Behavioral-Computational Task Space 关心的是：不同任务之间是否存在可以测量并预测的计算关系？</p>
+                <p>Think-aloud model discovery 关心的是：在行为本身无法区分多个解释时，额外的过程数据能否进一步约束模型？</p>
+                <p>Cross-experiment analysis 关心的是：同一个行为效应为什么在不同实验条件下发生变化？这些差异是否可以被解释和预测？</p>
+                <p>LLM exploration 和内部机制分析则让我思考：一个系统能够表示某种理论变量，是否意味着它真正利用这个变量来指导行为？</p>
+                <p>这些问题并不相同，也不需要被强行放进同一个模型。</p>
+                <p>但它们都在尝试解决一个更根本的问题：</p>
+                <p><strong>How can existing evidence constrain, challenge, and improve our explanations of the mind?</strong></p>
+                <p>已有的科学证据，如何真正地约束、挑战和改进我们对心智的解释？</p>
+                <p>也许我真正希望建立的，不只是连接论文、实验和数据的计算系统，而是一种能够让理论持续接受检验和修正的研究方式。</p>
+                <p>在这样的研究过程中，一个新的发现应该能够改变我们已有的认识；一个无法解释的结果应该成为重新审视理论的机会；一个尚未检验的条件应该成为区分不同解释的可能实验。</p>
+                <p>这也意味着，方法本身不应该成为研究的终点。</p>
+                <p>我希望始终记得，实验表示、统计模型、AI agents 和大规模数据都只是手段。真正的目标仍然是理解人类认知。</p>
+                <h2>8. 留给未来自己的几个问题</h2>
+                <p>我希望在未来阅读论文、设计实验、构建模型时，不断回到下面这些问题：</p>
+                <ol>
+                <li><strong>What am I trying to explain?</strong> 我到底在解释一个实验效应，还是某种更一般的认知能力？</li>
+                <li><strong>What would count as an explanation?</strong> 我的模型只是拟合了现有结果，还是明确提出了产生这些结果的机制？</li>
+                <li><strong>What is actually shared across studies?</strong> 不同研究之间共享的是名称、任务结构、行为模式，还是某种真正的计算过程？</li>
+                <li><strong>What alternative explanations remain possible?</strong> 是否存在完全不同的机制，同样能够解释目前的数据？</li>
+                <li><strong>What observation would change my mind?</strong> 什么样的新结果会迫使我放弃或修正当前最喜欢的解释？</li>
+                <li><strong>What new prediction follows?</strong> 我的研究能否预测一个尚未观测过的任务、条件或行为模式？</li>
+                <li><strong>Does the added complexity buy new scientific understanding?</strong> 我引入的新表示、新数据或新模型，究竟增加了什么不可替代的科学信息？</li>
+                </ol>
+                <p>最后一个问题尤其值得我反复提醒自己。</p>
+                <p>有时候，我们会因为一个方法足够先进、一个模型足够复杂，就认为研究正在前进。但真正的进步不应该由技术复杂度来定义。</p>
+                <p>科学研究当然需要不断发展新的工具，但也需要不断问自己：这个工具究竟帮助我们解决了什么以前无法解决的问题？</p>
+                <h2>结语：从更多答案，到更好的解释</h2>
+                <p>Newell 的问题在半个多世纪后的今天依然重要。</p>
+                <p>我们拥有比过去更多的数据、更强大的计算能力和更加先进的 AI 模型。</p>
+                <p>然而，技术的进步并不能自动保证理论的进步。</p>
+                <p>我希望未来的研究不仅能够发现新的现象，更能够解释已有现象之间的联系与差异；不仅能够预测观察过的数据，更能够在新的条件下检验和修正我们的理解。</p>
+                <p>也许 cumulative cognitive science 的目标并不是最终找到一个能够回答所有问题的理论，而是建立一种研究方式，使每个新的发现都有机会改变我们对心智的认识。</p>
+                <p><strong>I want to build a cognitive science in which evidence does not merely accumulate, but explanations become more precise, more constrained, and more open to revision.</strong></p>
+                <p>我希望建立的是这样一种认知科学：证据不只是不断增加，我们对心智的解释也能不断变得更加精确、受到更多约束，并始终允许新的证据对其提出挑战。</p>
+                <p>毕竟，科学进步不只是知道得更多。</p>
+                <p><strong>It is understanding better what we know, why we believe it, where it may fail, and what we should test next.</strong></p>
+                <hr />
+              </div>
+            </div>
+          </details>
+        </article>
         <article id="from-reading-to-questions" class="blog-card blog-card-photo" lang="en" data-bilingual-post>
           <details>
             <summary>
